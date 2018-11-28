@@ -136,7 +136,7 @@
 
                                 <div class="form-group"><!-- has-success -->
                                     <label class="form-control-label" for="username">Email</label>
-                                    <input type="text" placeholder="ex. User021@example.com" class="form-control" name="email" id="email"> <!-- is-valid -->
+                                    <input type="text" placeholder="ex. User021@example.com" class="form-control" name="email" id="email" onchange="isValidEmail()"> <!-- is-valid -->
                                     <!-- <div class="valid-feedback">Success! You've done it.</div> -->
                                 </div>
 
