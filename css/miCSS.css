@@ -1,0 +1,16 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gradient, .modal-content .modal-header{
+    background-image: linear-gradient(to right, #14557B, #7FCEC5);
+}
+
+#username, ul a:hover{
+    color: #7FCEC5;
+}
+
+li div a:hover{ 
+    background-color: #7FCEC5;
+}
+
