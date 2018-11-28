@@ -15,13 +15,13 @@ try {
  
     // guardamos el resultado en formato array asociativo.
     $result = $stmt->fetchAll();
-    $result = $result;
     //var_dump($result);
     
 }
 catch(PDOException $e) {
     //$result = ["error" => $e];
     $_SESSION['feedback']['error'] = errorMessage($e);
+    $result = "";
 }
 
 $conn = closeBD();
