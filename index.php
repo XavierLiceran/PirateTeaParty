@@ -1,4 +1,4 @@
-<?php include $_SERVER['DOCUMENT_ROOT'] .'/templates/master.php' ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] .'/PirateTeaParty/templates/master.php' ?>
 <script src="js/miJS/prueba.js"></script>
 
 

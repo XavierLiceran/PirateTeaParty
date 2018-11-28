@@ -8,7 +8,7 @@
         echo '</button>';
         //var_dump($_SESSION);
         echo $_SESSION['feedback']['error'];
-        unset($_SESSION['feedback']['error']));
+        unset($_SESSION['feedback']['error']);
 
         echo '</div>';
     
