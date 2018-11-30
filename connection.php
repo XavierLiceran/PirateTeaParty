@@ -3,10 +3,10 @@
 function openBD()
 {
     
-    $servername = "hostingmysql328.nominalia.com";
-    $username = "daw2a04";
+    $servername = "localhost";
+    $username = "root";
     $BDname = "daw2a04";
-    $password = "a1s2d3f4g5";
+    $password = "";
     
     //Los errores que puede soltar al intentar conectarse los tendremos que tratar desde donde 
     //llamomos a la funcion openBD
