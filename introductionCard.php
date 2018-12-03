@@ -1,13 +1,11 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] .'/PirateTeaParty/templates/master.php' ?>
 
-<link rel="stylesheet" href="prensentationCSS.css">
 
- 
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="./css//font-awesome.min.css">
-<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+<!-- Theme CSS -->
+<link href="css/agency.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.min.css"> 
+<link rel="stylesheet" href="css/bootstrap.min.css">
 
 <?php startblock('principal')?>
 

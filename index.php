@@ -125,7 +125,7 @@
       <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
       <p>El grupo que ha realizado esta actividad interactiva formado por: Samu,Xavi,Christian y Daniel</p>
         <br>
-      <a href="IntroductionCard.php">  <p> Leer Más ... </p> </a> 
+      <a href="IntroductionCard.php">  <p> More about Development TEAM. </p> </a> 
     </div>
 
     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
