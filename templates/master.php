@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="./css/miCSS.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
 
 </head>
 <body>
@@ -134,19 +134,19 @@
                                     <!-- <div class="valid-feedback">Success! You've done it.</div> -->
                                 </div>
 
-                                <div class="form-group"><!-- has-success -->
+                                <div id="emailDiv" class="form-group"><!-- has-success -->
                                     <label class="form-control-label" for="username">Email</label>
-                                    <input type="text" placeholder="ex. User021@example.com" class="form-control" name="email" id="email" onchange="isValidEmail()"> <!-- is-valid -->
+                                    <input type="text" placeholder="ex. User021@example.com" class="form-control" name="email" id="email" onchange="validate()"> <!-- is-valid -->
                                     <!-- <div class="valid-feedback">Success! You've done it.</div> -->
                                 </div>
 
-                                <div class="form-group"><!-- has-danger -->
+                                <div id="pswDiv" class="form-group"><!-- has-danger -->
                                     <label class="form-control-label" for="passwordInput">Password</label>
                                     <input type="password" placeholder="password" class="form-control" id="passwordInput" name="passwd"><!-- is-invalid -->
                                     <!-- <div class="invalid-feedback">Sorry, that username's taken. Try another?</div> -->
                                 </div>
 
-                                <div class="form-group"><!-- has-danger -->
+                                <div id="repeatPswDiv" class="form-group"><!-- has-danger -->
                                     <label class="form-control-label" for="repeatPasswordInput">Repeat Password</label>
                                     <input type="password" placeholder="Repeat password" class="form-control" id="repeatPasswordInput"><!-- is-invalid -->
                                     <!-- <div class="invalid-feedback">Sorry, that username's taken. Try another?</div> -->
@@ -175,6 +175,8 @@
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
     <script src="./js/bootstrap.min.js"></script>
 
+    <!-- JS LOGIN/REGISTER -->
+    <script src="./js/miJS/prueba.js"></script>
     <?php 
     //funcion de switchController, mira de donde venimos y en funcion de eso abre una cosa o otra
     switchMaster();
