@@ -33,7 +33,7 @@
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark gradient">
             <!-- LOGO -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.php">
                 <img src="img/icons/big-anchor32.png" alt="">
             </a>
 
