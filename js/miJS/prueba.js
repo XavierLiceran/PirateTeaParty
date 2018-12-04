@@ -1,31 +1,13 @@
-//alert('Yo entro');
-
-// //Modals
-// var loginModal = document.getElementById('loginModal');
-// var registerModal = document.getElementById('registerModal');
-
-// //Btns
-// var openLoginBtn = document.getElementById('openLoginBtn');
-//var openRegisterBtn = document.getElementById('openRegisterBtn');
-
-//Functions
-// openLoginBtn.onclick = function() {
-//     if(registerModal.style.display == "block"){
-//         registerModal.style.display = "none";
-//     }
-//     loginModal.style.display = "block";
-// }
-
 //Funcion que abre la ventana modal Register
 function openRegister() {
-    $('#loginModal').modal('hide');
     $('#registerModal').modal('show');
+    $('#loginModal').modal('hide');
 }
 
 //Register que abre la ventana modal de Login
 function openLogin() {
-    $('#registerModal').modal('hide');
     $('#loginModal').modal('show');
+    $('#registerModal').modal('hide');
 }
 
 //Función que valida la psw
@@ -40,7 +22,7 @@ function isValidPsw(){
     if(psw.length < 6){
 
         document.getElementById("pswDiv").className = "form-group has-danger";
-        document.getElementById("passwordInput").className = "form-group is-invalid";
+        document.getElementById("passwordInput").className = "form-control is-invalid";
         
         var newDiv = document.createElement("div");
         newDiv.setAttribute("id", "pswFeedback");
@@ -100,9 +82,13 @@ function isSamePsw(){
 
 //Función para validar el mail
 function validateEmail(email) {
-    var re = "/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/";
-    var patt = new RegExp(re);
-    return patt.test(email);
+    // var re = "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/";
+    // var patt = new RegExp(re);
+    if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+        return true;
+    }else {
+        return false;
+    }
 }
 
 //Función que cambiará el feedback al usuario dependiendo de lo que haya escrito en Email
@@ -110,22 +96,27 @@ function validate() {
     var email = document.getElementById("email").value;
     var emailDiv = document.getElementById("emailDiv").className;
     var emailInput = document.getElementById("email").className;
+    var child = document.getElementById("newMailDiv");
+
+    if(typeof(child)!= 'undefined' && child != null){
+        document.getElementById("emailDiv").removeChild(child);
+    }
 
     var newDiv = document.createElement("div");
     newDiv.setAttribute("id", "newMailDiv");
 
     if (validateEmail(email)) {
-        emailDiv += " has-success";
-        emailInput += " is-valid";
+        emailDiv = "form-group has-success";
+        emailInput = "form-control is-valid";
         
         newDiv.setAttribute("class", "valid-feedback");
-        var text = document.createTextNode("Invalid Email!!");
+        var text = document.createTextNode("Valid Email!!");
     } else {
-        emailDiv += "has-danger";
-        emailInput += "is-invalid";
+        emailDiv = "form-group  has-danger";
+        emailInput = "form-control is-invalid";
 
         newDiv.setAttribute("class", "invalid-feedback");
-        var text = document.createTextNode("Valid Email!!");
+        var text = document.createTextNode("Invalid Email!!");
     }
     document.getElementById("emailDiv").className = emailDiv;
     document.getElementById("email").className = emailInput;
