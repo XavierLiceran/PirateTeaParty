@@ -19,8 +19,10 @@
         <?php startblock('titulo')?>
         <?php endblock()?>
     </title>
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="./css/miCSS.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
@@ -86,7 +88,7 @@
                             
                                 <div class="form-group"><!-- has-success -->
                                     <label class="form-control-label" for="username">Mail</label>
-                                    <input type="text" name = "email" placeholder="ex. User021" class="form-control" id="username"> <!-- is-valid -->
+                                    <input type="text" name = "username" placeholder="ex. User021" class="form-control" id="username"> <!-- is-valid -->
                                     <!-- <div class="valid-feedback">Success! You've done it.</div> -->
                                 </div>
 
@@ -136,19 +138,19 @@
 
                                 <div id="emailDiv" class="form-group"><!-- has-success -->
                                     <label class="form-control-label" for="username">Email</label>
-                                    <input type="text" placeholder="ex. User021@example.com" class="form-control" name="email" id="email" onchange="validate()"> <!-- is-valid -->
+                                    <input type="text" placeholder="ex. User021@example.com" class="form-control" name="email" id="email" onkeyup="validate()"> <!-- is-valid -->
                                     <!-- <div class="valid-feedback">Success! You've done it.</div> -->
                                 </div>
 
                                 <div id="pswDiv" class="form-group"><!-- has-danger -->
                                     <label class="form-control-label" for="passwordInput">Password</label>
-                                    <input type="password" placeholder="password" class="form-control" id="passwordInput" name="passwd"><!-- is-invalid -->
+                                    <input type="password" placeholder="password" class="form-control" id="passwordInput" name="passwd" onchange="isValidPsw()"><!-- is-invalid -->
                                     <!-- <div class="invalid-feedback">Sorry, that username's taken. Try another?</div> -->
                                 </div>
 
                                 <div id="repeatPswDiv" class="form-group"><!-- has-danger -->
                                     <label class="form-control-label" for="repeatPasswordInput">Repeat Password</label>
-                                    <input type="password" placeholder="Repeat password" class="form-control" id="repeatPasswordInput"><!-- is-invalid -->
+                                    <input type="password" placeholder="Repeat password" class="form-control" id="repeatPasswordInput" onkeyup="isSamePsw()"><!-- is-invalid -->
                                     <!-- <div class="invalid-feedback">Sorry, that username's taken. Try another?</div> -->
                                 </div>
 

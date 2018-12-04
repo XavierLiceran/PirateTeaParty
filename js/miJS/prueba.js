@@ -31,20 +31,36 @@ function openLogin() {
 //Función que valida la psw
 function isValidPsw(){
     var psw = document.getElementById("passwordInput").value;
+    var child = document.getElementById("pswFeedback");
+
+    if(typeof(child)!= 'undefined' && child != null){
+        document.getElementById("pswDiv").removeChild(child);
+    }
 
     if(psw.length < 6){
 
-        var pswDiv = document.getElementById("pswDiv").className;
-        var pswInput = document.getElementById("passwordInput").className;
+        document.getElementById("pswDiv").className = "form-group has-danger";
+        document.getElementById("passwordInput").className = "form-group is-invalid";
         
-        pswDiv += "has-danger";
-        pswInput += "is-invalid";
-        
+        var newDiv = document.createElement("div");
+        newDiv.setAttribute("id", "pswFeedback");
         newDiv.setAttribute("class", "invalid-feedback");
-        var text = document.createTextNode("Passwords doesn't match!");
+        var text = document.createTextNode("Password is less than 6 characters!");
 
         newDiv.appendChild(text);
-        pswDiv.appendChild(newDiv);
+        document.getElementById("pswDiv").appendChild(newDiv);
+    } else {
+
+        document.getElementById("pswDiv").className = "form-group has-success";
+        document.getElementById("passwordInput").className = "form-control is-valid";
+
+        var newDiv = document.createElement("div");
+        newDiv.setAttribute("id", "pswFeedback");
+        newDiv.setAttribute("class", "valid-feedback");
+        var text = document.createTextNode("Password is strong!");
+
+        newDiv.appendChild(text);
+        document.getElementById("pswDiv").appendChild(newDiv);
     }
 }
 
@@ -55,31 +71,38 @@ function isSamePsw(){
     var pswDiv = document.getElementById("repeatPswDiv").className;
     var pswInput = document.getElementById("repeatPasswordInput").className;
 
+    var child = document.getElementById("newRepeatPswDiv");
+
+    if(typeof(child)!= 'undefined' && child != null){
+        document.getElementById("repeatPswDiv").removeChild(child);
+    }
+
     var newDiv = document.createElement("div");
     newDiv.setAttribute("id", "newRepeatPswDiv");
 
     if(psw === psw2){
-        pswDiv += "has-success";
-        pswInput += "is-valid";
+        document.getElementById("repeatPswDiv").className = "form-group has-success";
+        document.getElementById("repeatPasswordInput").className = "form-control is-valid";
         
         newDiv.setAttribute("class", "valid-feedback");
         var text = document.createTextNode("Passwords match!");
     } else {
-        pswDiv += "has-danger";
-        pswInput += "is-invalid";
+        document.getElementById("repeatPswDiv").className = "form-group has-danger";
+        document.getElementById("repeatPasswordInput").className = "form-control is-invalid";
         
         newDiv.setAttribute("class", "invalid-feedback");
         var text = document.createTextNode("Passwords doesn't match!");
     }
 
     newDiv.appendChild(text);
-    pswDiv.appendChild(newDiv);
+    document.getElementById("repeatPswDiv").appendChild(newDiv);
 }
 
 //Función para validar el mail
 function validateEmail(email) {
     var re = "/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/";
-    return re.test(email);
+    var patt = new RegExp(re);
+    return patt.test(email);
 }
 
 //Función que cambiará el feedback al usuario dependiendo de lo que haya escrito en Email
@@ -92,8 +115,8 @@ function validate() {
     newDiv.setAttribute("id", "newMailDiv");
 
     if (validateEmail(email)) {
-        emailDiv += "has-success";
-        emailInput += "is-valid";
+        emailDiv += " has-success";
+        emailInput += " is-valid";
         
         newDiv.setAttribute("class", "valid-feedback");
         var text = document.createTextNode("Invalid Email!!");
@@ -104,8 +127,9 @@ function validate() {
         newDiv.setAttribute("class", "invalid-feedback");
         var text = document.createTextNode("Valid Email!!");
     }
-
+    document.getElementById("emailDiv").className = emailDiv;
+    document.getElementById("email").className = emailInput;
     newDiv.appendChild(text);
-    emailDiv.appendChild(newDiv);
+    document.getElementById("emailDiv").appendChild(newDiv);
     return false;
 }

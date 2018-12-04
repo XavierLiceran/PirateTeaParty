@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Bootstrap Core CSS -->
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
 <!-- Custom Fonts -->
 <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -25,7 +25,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in">Hola!</div>
                 <div class="intro-heading">Bienvenidos/as a la aventura sobre los piratas en el mediterraneo!</div>
-                <a href="#services" class="page-scroll btn btn-xl">Quiero unirme!</a>
+                <!-- <a href="#services" class="page-scroll btn btn-xl">Quiero unirme!</a> -->
             </div>
         </div>
     </header>
@@ -81,7 +81,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
 
 <!-- Contact Form JavaScript -->
-<script src="js/jqBootstrapValidation.js"></script>
+<!-- <script src="js/jqBootstrapValidation.js"></script> -->
 <script src="js/contact_me.js"></script>
 
 <!-- Theme JavaScript -->
