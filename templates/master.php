@@ -44,19 +44,19 @@
 
             <!-- ITEMS NAVBAR -->
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav mr-auto"> 
-                    <!-- DROPDOWN LIST -->
+                <!-- <ul class="navbar-nav mr-auto"> 
+                    DROPDOWN LIST
                     <li class="nav-item dropdown">
-                        <!-- DROPDOWN TITLE -->
+                        DROPDOWN TITLE
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Datos maestros
                         </a>
-                        <!-- DROPDOWN ITEMS -->
+                        DROPDOWN ITEMS
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Secciones</a>
                         </div>
                     </li>
-                 </ul>
+                 </ul> -->
             </div>
 
             <!-- LOGIN MODAL BTN -->
@@ -158,7 +158,7 @@
                                 <button type="button" name="openLoginBtn" id="openLoginBtn" class="btn btn-link" onclick="openLogin()">
                                     Do you already have an account? Just login here!
                                 </button>
-                                <button type="submit" class="btn btn-block btn-primary">Register!</button>
+                                <button id="registerBtn" type="button" class="btn btn-block btn-primary">Register!</button>
                             </form>
                         </div>
                     </div>

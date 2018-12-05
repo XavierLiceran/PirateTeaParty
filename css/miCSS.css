@@ -4,7 +4,7 @@ body {
 
 .gradient,
 .modal-content .modal-header {
-    background-image: linear-gradient(to right, #14557B, #7FCEC5);
+    background-image: linear-gradient(to right, #142c35, #2e667d);
 }
 
 #username,
@@ -96,9 +96,9 @@ li div a:hover {
     color: white;
 }
 
-/* body {
-    background-color: black;
-} */
+body {
+    background-color: #F0E5D9;
+}
 
 #principal-header {
     margin-top: -20px;
