@@ -1,8 +1,9 @@
 <?php 
     session_start();
     require_once $_SERVER['DOCUMENT_ROOT'] . '/PirateTeaParty/librerias/ti.php'; 
-    require_once('mensajes.php');
-    require_once('switchController.php');
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/PirateTeaParty/mensajes.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/PirateTeaParty/switchController.php';
+    
     if (!isset($_SESSION['from'])){
         $_SESSION['from'] = "";    
     }
@@ -180,6 +181,11 @@
 
     <!-- JS LOGIN/REGISTER -->
     <script src="./js/miJS/prueba.js"></script>
+
+    <!-- SCRIPTS de mas -->
+    <?php startblock('scripts')?>
+    <?php endblock()?>
+
     <?php 
     //funcion de switchController, mira de donde venimos y en funcion de eso abre una cosa o otra
     switchMaster();

@@ -1,0 +1,80 @@
+.customContainer {
+    position: relative;
+    height: 90vh;
+    width: 50%;
+    /* left: 35%; */
+    margin-top: 10px;
+    background-color: #292929;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.barco {
+    position: absolute;
+    background-image: url(../../img/enigma/enigma2/corsair_sprite.png);
+    
+    height: 185px;
+    width: 91px;
+    /* background-color: #fff; */
+}
+
+#barcoJugador {
+    background-image: url(../../img/enigma/enigma2/pirate_sprite.png);
+    bottom: 8%;
+    left: 45%;
+
+}
+
+#barcoEnemigo {
+    top: -100px;
+    left: 60%;
+}
+
+#barcoEnemigo2 {
+    top: -320px;
+    left: 40%;
+}
+
+#barcoEnemigo3 {
+    top: -550px;
+    left: 50%;
+}
+
+.collisionsquare {
+    width: 40px;
+    height: 128px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+#restart_div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: none;
+}
+
+#restart {
+    border: none;
+    padding: 25px;
+    color: white;
+    margin-top: 30%; 
+    background-color: #142c35;
+}
+
+.small_text{
+
+}
+
+#score_div{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 10%;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    box-shadow: 4px 4px 0px 1px #292929;
+}
