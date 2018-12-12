@@ -184,6 +184,7 @@
 
     <!-- SCRIPTS de mas -->
     <?php startblock('scripts')?>
+    
     <?php endblock()?>
 
     <?php 
