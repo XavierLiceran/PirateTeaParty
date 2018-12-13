@@ -1,11 +1,11 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] .'/PirateTeaParty/templates/master.php' ?>
 <?php startblock('titulo')?>
-    Enigma1
+    Enigma nº1
 <?php endblock()?>
 <?php startblock('principal')?>
 <div class="container" id="game">
-<h2 style="text-align:center;font-weight:bold;">Responde el questionario</h2>
- <div class="text-danger">Te quedan <span id="time">00:10</span> segundos para responder!</div>
+<h2 style="text-align:center;font-weight:bold;">Responde las preguntas</h2>
+ <div class="text-danger"><h2>Te quedan <span id="time">00:10</span> segundos!<h2></div>
      <hr style="margin-bottom: 20px">
 
      <div class="card">
