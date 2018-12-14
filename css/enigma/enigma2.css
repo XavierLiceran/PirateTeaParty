@@ -4,10 +4,14 @@
     width: 50%;
     /* left: 35%; */
     margin-top: 10px;
-    background-color: #292929;
+    /* background-color: #292929; */
+    background-image: url(../../img/enigma/enigma2/calm-sea.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
     overflow: hidden;
     margin-right: auto;
     margin-left: auto;
+
 }
 
 .barco {

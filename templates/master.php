@@ -38,32 +38,47 @@
                 <img src="img/icons/big-anchor32.png" alt="">
             </a>
 
-            <!-- DROP DOWN Btn-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- DROP DOWN Btn -->
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
 
-            <!-- ITEMS NAVBAR -->
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <!-- <ul class="navbar-nav mr-auto"> 
-                    DROPDOWN LIST
-                    <li class="nav-item dropdown">
-                        DROPDOWN TITLE
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Datos maestros
-                        </a>
-                        DROPDOWN ITEMS
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Secciones</a>
-                        </div>
-                    </li>
-                 </ul> -->
-            </div>
-
+            <?php
+                if(!isset($_SESSION['user'])) {
+            ?>
             <!-- LOGIN MODAL BTN -->
-            <button type="button" class="btn rounded-circle w-32 h-32 p-1 bg-transparent" data-toggle="modal" data-target="#loginModal">
-                <img src="img/icons/man-user32.png" class="img-fluid" alt="">
-            </button>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <button type="button" class="btn rounded-circle w-32 h-32 p-1 bg-transparent" data-toggle="modal" data-target="#loginModal">
+                        <img src="img/icons/man-user32.png" class="" alt="">
+                    </button>
+                </li>
+            </ul>            
+
+
+           
+            <?php
+                } else{
+            ?>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <!-- BIENVENIDO USER -->
+                    <h8 class="navbar-brand float-right">
+                        <?php 
+                            echo "Bienvenido, " . $_SESSION['user']['name'];
+                        ?>
+                    </h8>
+                </li>
+                <li class="nav-item">
+                    <!-- BTN CERRRAR SESIÓN -->
+                    <form method="post" action="sessionController.php">
+                        <input type="submit" class="btn btn-danger" name="CERRAR" value="CERRAR SESIÓN" />
+                    </form>
+                </li>
+            </ul>
+            <?php
+                }
+            ?>
 
             <!-- LOGIN MODAL -->
             <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
