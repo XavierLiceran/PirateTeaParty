@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .gradient,
@@ -229,9 +229,12 @@ section .section-title {
 .detras .card .card-title {
     color: #007b5e !important;
 }
-
+#preguntas {
+    float:right;
+}
 .delante .card .card-body img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
 }
+

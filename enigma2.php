@@ -1,7 +1,7 @@
 <?php include $_SERVER['DOCUMENT_ROOT'] .'/PirateTeaParty/templates/master.php' ?>
 
 <?php startblock('titulo')?>
-    Enigma2
+    Enigma nº2
 <?php endblock()?>
 
 <?php startblock('principal')?>
