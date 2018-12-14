@@ -82,10 +82,10 @@
       <!-- Grid column -->
       <div class="col-md-6 col-lg-7 text-center text-md-right">
 
-            <a href="https://wwww.facebook.com" target="_blank" class="fa fa-facebook"></a>
-            <a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
-            <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
-            <a href=" https://www.youtube.com/" target="_blank" class="fa fa-youtube"></a>
+            <a href="https://wwww.facebook.com" target="_blank" class="fa fa-facebook" style="text-decoration:none;"></a>
+            <a href="https://twitter.com/" target="_blank" class="fa fa-twitter" style="text-decoration:none;"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram" style="text-decoration:none;"></a>
+            <a href=" https://www.youtube.com/" target="_blank" class="fa fa-youtube" style="text-decoration:none;"></a>
 
       </div>
 

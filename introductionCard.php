@@ -3,7 +3,7 @@
 
 
 <!-- Theme CSS -->
-<link href="css/agency.min.css" rel="stylesheet">
+
 <link rel="stylesheet" href="css/font-awesome.min.css"> 
 <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 
@@ -22,7 +22,6 @@
                                 <div class="card-body text-center">
                                     <p><img class=" img-fluid" src="img/christian.jpeg" alt="card image"></p>
                                     <h4 class="card-title">Christian Logroño</h4>
-                                    <p class="card-text">Aquí va una pequeña descripcion....</p>
                                 </div>
                             </div>
                         </div>
@@ -30,7 +29,7 @@
                             <div class="card">
                                 <div class="card-body text-center mx-auto">
                                     <h4 class="card-title">Descripcion</h4>
-                                    <p class="card-text">Aquí va una pequeña descripcion....Aquí va una pequeña descripcion....Aquí va una pequeña descripcion....</p>
+                                    <p class="card-text"><strong>Un programador de DAM y ahora DIW y mi lenguaje favorito es C++ sin dudarlo.</strong></p>
                                 </div>
                             </div>
                         </div>
@@ -47,15 +46,14 @@
                                 <div class="card-body text-center">
                                     <p><img class=" img-fluid" src="img/xavier.png" alt="card image"></p>
                                     <h4 class="card-title">Xavier Liceran</h4>
-                                    <p class="card-text">Aquí va una pequeña descripcion....</p>
                                 </div>
                             </div>
                         </div>
                         <div class="detras">
                             <div class="card">
                                 <div class="card-body text-center mx-auto">
-                                    <h4 class="card-title">Descripcion</h4>
-                                    <p class="card-text">Aquí va una pequeña descripcion....Aquí va una pequeña descripcion....Aquí va una pequeña descripcion....</p>
+                                <h4 class="card-title">Descripcion</h4>
+                                    <p class="card-text"><strong>Un programador de DAM y ahora DIW y mi lenguaje favorito es C# claramente.</strong></p>
                                 </div>
                             </div>
                         </div>
@@ -72,15 +70,14 @@
                                 <div class="card-body text-center">
                                     <p><img class=" img-fluid" src="img/samu.png" alt="card image"></p>
                                     <h4 class="card-title">Samuel Martin</h4>
-                                    <p class="card-text">Aquí va una pequeña descripcion....</p>
                                 </div>
                             </div>
                         </div>
                         <div class="detras">
                             <div class="card">
                                 <div class="card-body text-center mx-auto">
-                                    <h4 class="card-title">Descripcion</h4>
-                                    <p class="card-text">Aquí va una pequeña descripcion....Aquí va una pequeña descripcion....Aquí va una pequeña descripcion....</p>
+                                <h4 class="card-title">Descripcion</h4>
+                                    <p class="card-text"><strong>Un programador de DAM y ahora DIW y mi lenguaje favorito es Phyton , me gusta su facil uso.</strong></p>
                                 </div>
                             </div>
                         </div>
@@ -97,15 +94,14 @@
                                 <div class="card-body text-center">
                                     <p><img class=" img-fluid" src="img/dani.png" alt="card image"></p>
                                     <h4 class="card-title">Dani Reyes</h4>
-                                    <p class="card-text">Aquí va una pequeña descripcion....</p>
                                 </div>
                             </div>
                         </div>
                         <div class="detras">
                             <div class="card">
                                 <div class="card-body text-center mx-auto">
-                                    <h4 class="card-title">Descripcion</h4>
-                                    <p class="card-text">Aquí va una pequeña descripcion....Aquí va una pequeña descripcion....Aquí va una pequeña descripcion....</p>
+                                <h4 class="card-title">Descripcion</h4>
+                                    <p class="card-text"> <strong>Un programador de DAM y ahora DIW y mi lenguaje favorito es Java sin dudarlo. </strong></p>
                                 </div>
                             </div>
                         </div>
