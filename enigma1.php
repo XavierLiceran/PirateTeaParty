@@ -15,18 +15,18 @@
   <div class="card-body">
   <div class="row">
   <div class="col-6">
-  <button type="button" class="btn btn-primary btn-block" id="btn0"><span id="choice0"></span></button>
+  <button type="button" style=" white-space: normal;" class="btn btn-primary btn-block" id="btn0"><span id="choice0"></span></button>
   </div>
   <div class="col-6">
-  <button type="button" class="btn btn-primary btn-block" id="btn1"><span id="choice1"></span></button>
+  <button type="button" style=" white-space: normal;" class="btn btn-primary btn-block" id="btn1"><span id="choice1"></span></button>
   </div>
 </div>
 <div class="row mt-2">
   <div class="col-6">
-  <button type="button" class="btn btn-primary btn-block" id="btn2"><span id="choice2"></span></button>
+  <button type="button" style=" white-space: normal;" class="btn btn-primary btn-block" id="btn2"><span id="choice2"></span></button>
   </div>
   <div class="col-6">
-  <button type="button" class="btn btn-primary btn-block" id="btn3"><span id="choice3"></span></button>
+  <button type="button" style=" white-space: normal;" class="btn btn-primary btn-block" id="btn3"><span id="choice3"></span></button>
   </div>
 </div>
   </div>

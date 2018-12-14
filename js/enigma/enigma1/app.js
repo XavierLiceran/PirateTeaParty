@@ -46,7 +46,7 @@ function mostrarResultados() {
     if (pregtotales == puntos)
     {
       var findeljuego = "<div class='alert alert-success alert-dismissible fade show mt-2' role='alert'>";
-      findeljuego += "<strong><h2 style='font-weight:bold;'>Puntuación Perfecta! Felicidades! " + juego.puntuacion + " de "+ juego.questions.length+ "preguntas" + "</h2></strong>";
+      findeljuego += "<strong><h2 style='font-weight:bold;'>Puntuación Perfecta! Felicidades! " + juego.puntuacion + " de "+ juego.questions.length+ " preguntas" + "</h2></strong>";
       findeljuego += "<button type='button' class='close' data-dismiss='alert' aria-label='Close'>";
       findeljuego+= "<span aria-hidden='true'>&times;</span>";
      findeljuego+= "</button></div>";
@@ -69,7 +69,7 @@ function mostrarResultados() {
     else{
 
         var findeljuego = "<div class='alert alert-success alert-dismissible fade show mt-2' role='alert'>";
-        findeljuego += "<strong><h2 style='font-weight:bold;'> No has contestado todas bien :( , Pero has contestado correctamente! " + juego.puntuacion + " de "+ juego.questions.length+ "preguntas" + "</h2></strong>";
+        findeljuego += "<strong><h2 style='font-weight:bold;'> No has contestado todas bien :( , Pero has contestado correctamente! " + juego.puntuacion + " de "+ juego.questions.length+ " preguntas" + "</h2></strong>";
         findeljuego += "<button type='button' class='close' data-dismiss='alert' aria-label='Close'>";
         findeljuego+= "<span aria-hidden='true'>&times;</span>";
        findeljuego+= "</button></div>";
