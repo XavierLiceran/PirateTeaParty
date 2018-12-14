@@ -18,6 +18,11 @@
 
 <?php startblock('principal')?>
     <!-- Header -->
+    <button onclick="getCookie('mivariable')">Click me</button>
+    <div id="obtenercookie" >
+
+</div>
+
     <header id="principal-header">
         <div class="container">
             <div class="intro-text">

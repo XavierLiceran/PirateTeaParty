@@ -197,6 +197,8 @@
     <!-- JS LOGIN/REGISTER -->
     <script src="./js/miJS/prueba.js"></script>
 
+    <script src="./js/cookies.js" > </script>
+
     <!-- SCRIPTS de mas -->
     <?php startblock('scripts')?>
     
