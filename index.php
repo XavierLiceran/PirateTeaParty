@@ -28,7 +28,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in">Hola!</div>
                 <div class="intro-heading">Bienvenidos/as a la aventura sobre los piratas en el mediterraneo!</div>
-                <!-- <a href="#services" class="page-scroll btn btn-xl">Quiero unirme!</a> -->
+                <button type="button" class="page-scroll btn btn-xl" data-toggle="modal" data-target="#registerModal">Registrarme ahora!</button>
             </div>
         </div>
     </header>
