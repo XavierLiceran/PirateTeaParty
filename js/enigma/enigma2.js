@@ -16,6 +16,9 @@ $(function(){
     var rbutton = $('#restart');
     var score = $('#score');
 
+    var ndiv = $('#next_div');
+    var nbutton = $('#nextEnigma');
+
     //Variables de configuración
     var cont_left = parseInt(container.css('left'));
     var cont_width = parseInt(container.width());
@@ -116,16 +119,26 @@ function spawnEnemy(enemy){
     enemy.css('top', current_top + speed);
 }
 
-function endGame(){
+function endGame($passed){
     game_over = true;
     cancelAnimationFrame(anim_id);
     cancelAnimationFrame(moveL);
     cancelAnimationFrame(moveR);
     cancelAnimationFrame(moveU);
     cancelAnimationFrame(moveD);
-    rdiv.slideDown();
-    rbutton.focus();
+
+    if($passed){
+        ndiv.slideDown();
+        nbutton.focus();
+    } else {
+        rdiv.slideDown();
+        rbutton.focus();
+    }
 }
+
+nbutton.click(function(){
+    //Actualizar cookie
+});
 
 rbutton.click(function(){
     location.reload();
@@ -135,9 +148,13 @@ function repeat(){
     if(game_over == false){
 
         if(collision(player, enemy1) || collision(player, enemy2) || collision(player, enemy3)){
-            endGame();
+            endGame(false);
         }
         
+        if(parseInt(score.text()) == 50){
+            endGame(true);
+        }
+
         score_counter++;
 
         if(score_counter % 20 == 0){

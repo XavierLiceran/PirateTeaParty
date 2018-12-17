@@ -61,7 +61,16 @@
     display: none;
 }
 
-#restart {
+#next_div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: none;
+}
+
+button {
     border: none;
     padding: 25px;
     color: white;
