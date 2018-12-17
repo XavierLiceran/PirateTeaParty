@@ -1,5 +1,7 @@
 body {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow:auto; 
+    background-color: #F0E5D9;
 }
 
 .gradient,
@@ -96,9 +98,6 @@ li div a:hover {
     color: white;
 }
 
-body {
-    background-color: #F0E5D9;
-}
 
 #principal-header {
     margin-top: -20px;
@@ -238,3 +237,4 @@ section .section-title {
     height: 120px;
     border-radius: 50%;
 }
+

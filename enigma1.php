@@ -3,7 +3,22 @@
     Enigma nº1
 <?php endblock()?>
 <?php startblock('principal')?>
-<div class="container" id="game">
+<div class="container mt-4">
+<div class="row">
+<div class="col-12">
+<div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
+  <strong><h3 style="font-weight:bold;">Si necesitas información, puedes consultar este diccionario de datos curiosos en cualquier momento!</h3></strong> 
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div style="float:right;">
+<button type="button"class="btn btn-danger"><a  target="_blank" style ="color:white; text-decoration:none;" href="infoEnigma1.php">Diccionario Pirata</a></button>
+</div>
+</div>
+</div>
+<div id="game">
 <h2 style="text-align:center;font-weight:bold;">Responde las preguntas</h2>
  <div class="text-danger"><h2>Te quedan <span id="time">00:10</span> segundos!<h2></div>
      <hr style="margin-bottom: 20px">
@@ -36,6 +51,7 @@
             <footer>
                 <p id="progress">Pregunta x de y</p>
             </footer>
+</div>
 </div>
 <?php endblock()?>
 <?php startblock('scripts')?>
