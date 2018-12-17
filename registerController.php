@@ -7,7 +7,8 @@ if (isset($_POST['email'])){
 
     //si el insert ha ido bien nos devolvera un feedback positivo.
     //si la consulta ha ido mal  nos devolvera los datos del error.
-    insertUser($_POST['email'],$_POST['passwd'],$_POST['name']);
+    $encPassword = md5($_POST['passwd'], false);
+    insertUser($_POST['email'],$encPassword,$_POST['name']);
     //session register nos sirve para decirle al indice de donde venimos.
     $_SESSION['from'] = "register";
 
@@ -27,8 +28,15 @@ if (isset($_POST['email'])){
             $_SESSION['user'] = $user[0];  
             $_SESSION['feedback']['succes'] = TRUE;     
         }
-    }    
-    header("location: index.php");
+    }
+    
+    if (isset($_SESSION['feedback']['succes'])) {
+        header("location: landing.php");
+    }  
+    else{   
+        header("location: index.php");
+    }
+
 }
 
 ?>

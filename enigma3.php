@@ -6,10 +6,17 @@
 
 <?php startblock('principal')?>
 <link rel="stylesheet" href="css/enigma/enigma3.css">
-<div class="container-fluid">
+<div class="container">
     
+    <div class="card float-left">
+        <img class="card-img-top" src="holder.js/100x180/" alt="">
+        <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Text</p>
+        </div>
+    </div>
 
-    <div class = "d-inline-block">
+    <div class = "float-right">
         
         <table class = "" id="Board">
         <thead>

@@ -15,6 +15,7 @@ try {
  
     // guardamos el resultado en formato array asociativo.
     $result = $stmt->fetchAll();
+    unset($result[0]['user']['passwd']);
     //var_dump($result);
     
 }
