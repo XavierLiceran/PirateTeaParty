@@ -6,7 +6,7 @@ function seguirJuego() {
     else { //---------->
         // enseñamos pregunta
 		
-		var tiempo = 10;
+		var tiempo = 15;
         display = document.querySelector('#time');
 		startTimer(tiempo, display);
 		
