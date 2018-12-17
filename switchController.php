@@ -5,7 +5,7 @@ function switchMaster(){
     switch($_SESSION['from']){
         case "login":
         if ($_SESSION['feedback']['succes'] === TRUE){
-            succesMsg("Hola " . $_SESSION['user']['name']);
+            succesMsg("Bienvenido " . $_SESSION['user']['name']);
         }
         else{
             //var_dump($_SESSION);
@@ -19,7 +19,6 @@ function switchMaster(){
         /* ?>
             <script>$('#loginModal').modal('show')</script>
         <?php */
-        succesMsg ("El registro ha ido chevere");
         
         }
         else{

@@ -27,7 +27,8 @@ if (isset($_POST['email'])){
             $_SESSION['user'] = $user[0];  
             $_SESSION['feedback']['succes'] = TRUE;     
         }
-    }    
+    }   
+     
     header("location: index.php");
 }
 
