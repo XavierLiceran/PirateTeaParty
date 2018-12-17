@@ -51,7 +51,6 @@ function mostrarResultados() {
       findeljuego+= "<span aria-hidden='true'>&times;</span>";
      findeljuego+= "</button></div>";
      findeljuego += "<button type='button' onclick='recargarPagina()' class='btn btn-success ml-2 mt-2'>Volver a intentarlo!</button>";
-     findeljuego += "<button type='button'class='btn btn-success ml-2 mt-2'><a style ='color:white; text-decoration:none;' href='enigma2.php'>Avanzar al enigma 2!</a></button>";
      var element = document.getElementById("game");
      element.innerHTML = findeljuego;
     }
@@ -62,7 +61,6 @@ function mostrarResultados() {
         findeljuego+= "<span aria-hidden='true'>&times;</span>";
        findeljuego+= "</button></div>";
        findeljuego += "<button type='button' onclick='recargarPagina()' class='btn btn-success ml-2 mt-2'>Volver a intentarlo!</button>";
-       findeljuego += "<button type='button'class='btn btn-success ml-2 mt-2'><a style ='color:white; text-decoration:none;' href='enigma2.php'>Avanzar al enigma 2!</a></button>";
        var element = document.getElementById("game");
        element.innerHTML = findeljuego;
     }
@@ -74,7 +72,6 @@ function mostrarResultados() {
         findeljuego+= "<span aria-hidden='true'>&times;</span>";
        findeljuego+= "</button></div>";
        findeljuego += "<button type='button' onclick='recargarPagina()' class='btn btn-success ml-2 mt-2'>Volver a intentarlo!</button>";
-       findeljuego += "<button type='button'class='btn btn-success ml-2 mt-2'><a style ='color:white; text-decoration:none;' href='enigma2.php'>Avanzar al enigma 2!</a></button>";
        var element = document.getElementById("game");
        element.innerHTML = findeljuego;
              
