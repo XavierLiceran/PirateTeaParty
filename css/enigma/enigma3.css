@@ -1,0 +1,117 @@
+
+
+.Square {
+	width: 60px;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+}
+/* thead tr th div, tfoot tr th div{
+	max-width: 60px;
+	max-height: 30px;
+	margin: 0;
+	padding: 0;
+}
+*/
+
+card{
+	display: inline-block;
+}
+tbody {
+	margin: 0;
+	padding: 0;
+	border-style: solid;
+	border-width: 10px; 
+	border-color:#4292B2;
+} 
+
+table { 
+	/* border-collapse: collapse; 
+	border-spacing: 0; */
+	border-style: solid;
+	border-width: 10px; 
+	border-color:#4292B2;
+	background-color:#91DFFF;
+	margin-top: 20px;
+	/* margin-right: 10px;*/ 
+	display: inline-block;
+
+  }
+
+.Light {
+	background-color:#91DFFF;
+}
+
+.Dark {
+	background-color:#4292B2;
+}
+
+.Square.alcance{
+	background-color:#1B5065 
+}
+
+.Square.victoria{
+	background-color: green;
+}
+
+.Square.amenazado{
+	background-color :red;
+}
+
+
+th{
+	background-color: #4292B2;
+	text-align: center;
+}
+
+td tr{ 
+padding: 0 ;
+margin: 0 ;
+width: 60px; 
+height: 60px; 
+
+}  
+
+.piece {
+	max-width: 60px;
+	max-height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
