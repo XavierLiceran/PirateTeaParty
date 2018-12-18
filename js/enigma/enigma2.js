@@ -25,6 +25,8 @@ $(function(){
     var cont_height = parseInt(container.height());
     var barco_width = parseInt(colsq.width());
     var barco_height = parseInt(colsq.height());
+    var barco_img_width = parseInt(player.width());
+    var barco_img_height = parseInt(player.height());
 
     //Variables controlador juego
     var game_over = false;
@@ -38,6 +40,7 @@ $(function(){
     var moveU = false;
     var moveD = false;
 
+    var maxScore = 100;
 /**/
 
 //Animaciones de movimiento
@@ -49,7 +52,7 @@ function left(){
 }
 
 function right(){
-    if(game_over == false && parseInt(player.css('left')) < cont_width - barco_width){
+    if(game_over == false && parseInt(player.css('left')) < cont_width - barco_img_width){
         player.css('left', parseInt(player.css('left')) + 5);
         moveR = requestAnimationFrame(right);
     }
@@ -63,7 +66,7 @@ function up(){
 }
 
 function down(){
-    if(game_over == false && parseInt(player.css('top')) < cont_height - barco_height){
+    if(game_over == false && parseInt(player.css('top')) < cont_height - barco_img_height){
         player.css('top', parseInt(player.css('top')) + 5);
         moveD = requestAnimationFrame(down);
     }
@@ -113,13 +116,13 @@ function spawnEnemy(enemy){
     var current_top = parseInt(enemy.css('top'));
     if(current_top > cont_height){
         current_top = -100;
-        var enemy_left = parseInt(Math.random() * (cont_width - barco_width));
+        var enemy_left = parseInt(Math.random() * (cont_width - barco_img_width));
         enemy.css('left', enemy_left);
     }
     enemy.css('top', current_top + speed);
 }
 
-function endGame($passed){
+function endGame($callback){
     game_over = true;
     cancelAnimationFrame(anim_id);
     cancelAnimationFrame(moveL);
@@ -127,13 +130,7 @@ function endGame($passed){
     cancelAnimationFrame(moveU);
     cancelAnimationFrame(moveD);
 
-    if($passed){
-        ndiv.slideDown();
-        nbutton.focus();
-    } else {
-        rdiv.slideDown();
-        rbutton.focus();
-    }
+    $callback();
 }
 
 nbutton.click(function(){
@@ -148,11 +145,17 @@ function repeat(){
     if(game_over == false){
 
         if(collision(player, enemy1) || collision(player, enemy2) || collision(player, enemy3)){
-            endGame(false);
+            endGame(function(){
+                rdiv.slideDown();
+                rbutton.focus();
+            });
         }
         
-        if(parseInt(score.text()) == 50){
-            endGame(true);
+        if(parseInt(score.text()) == maxScore){
+            endGame(function(){
+                ndiv.slideDown();
+                nbutton.focus()
+            });
         }
 
         score_counter++;
@@ -178,15 +181,15 @@ function repeat(){
     function collision($div1, $div2) {
         var x1 = $div1.offset().left + colsq.offset().left;
         var y1 = $div1.offset().top + colsq.offset().top;
-        var h1 = colsq.outerHeight(true);
-        var w1 = colsq.outerWidth(true);
+        var h1 = colsq.height();
+        var w1 = colsq.width();
         var b1 = y1 + h1;
         var r1 = x1 + w1;
 
         var x2 = $div2.offset().left + colsq.offset().left;
         var y2 = $div2.offset().top + colsq.offset().top;
-        var h2 = colsq.outerHeight(true);
-        var w2 = colsq.outerWidth(true);
+        var h2 = colsq.height();
+        var w2 = colsq.width();
         var b2 = y2 + h2;
         var r2 = x2 + w2;
 

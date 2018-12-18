@@ -2,6 +2,10 @@
     include $_SERVER['DOCUMENT_ROOT'] . '/PirateTeaParty/templates/master.php';
     include $_SERVER['DOCUMENT_ROOT'] . '/PirateTeaParty/librerias/bd.php';
 
+    if (!isset($_SESSION)){
+        session_start();  
+    }
+
     $usuarios = selectAllUsers();
 ?>
 <?php startblock('titulo')?>
@@ -9,6 +13,10 @@
 <?php endblock()?>
 
 <?php startblock('principal')?>
+<?php
+    if(isset($_SESSION['user'])){
+        if($_SESSION['user']['ADMIN'] == 1){
+?>
     <br>
     <div class="container-fluid">
 
@@ -97,6 +105,10 @@
             </div>
         </div>
     </div>
+    <?php
+        }
+    }
+    ?>
 <?php endblock()?>
 
 <?php startblock('scripts')?>

@@ -1,9 +1,10 @@
 .customContainer {
     position: relative;
-    height: 90vh;
-    width: 50%;
+    height: 85vh;
+    width: 700px;
     /* left: 35%; */
     margin-top: 10px;
+    margin-bottom: 10px;
     /* background-color: #292929; */
     background-image: url(../../img/enigma/enigma2/calm-sea.gif);
     background-repeat: no-repeat;
@@ -11,7 +12,6 @@
     overflow: hidden;
     margin-right: auto;
     margin-left: auto;
-
 }
 
 .barco {
@@ -47,9 +47,10 @@
 
 .collisionsquare {
     width: 40px;
-    height: 128px;
+    height: 120px;
     margin-top: 40px;
-    margin-left: 20px;
+    margin-left: 22px;
+    margin-bottom: 20px;
 }
 
 #restart_div {
@@ -70,7 +71,7 @@
     display: none;
 }
 
-button {
+.buttonEnter {
     border: none;
     padding: 25px;
     color: white;

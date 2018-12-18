@@ -26,6 +26,17 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="./css/miCSS.css">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
     
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
 
@@ -104,19 +115,19 @@
                             <form action="loginController.php" method="post"> 
                             
                                 <div class="form-group"><!-- has-success -->
-                                    <label class="form-control-label" for="username">Mail</label>
+                                    <label class="form-control-label" for="username">Email</label>
                                     <input type="text" name = "username" placeholder="ex. User021" class="form-control" id="username"> <!-- is-valid -->
                                     <!-- <div class="valid-feedback">Success! You've done it.</div> -->
                                 </div>
 
                                 <div class="form-group"><!-- has-danger -->
-                                    <label class="form-control-label" for="inputDanger1">Password</label>
-                                    <input type="password" name ="passwd" placeholder="password" class="form-control" id="inputInvalid"><!-- is-invalid -->
+                                    <label class="form-control-label" for="inputDanger1">Contraseña</label>
+                                    <input type="password" name ="passwd" placeholder="······" class="form-control" id="inputInvalid"><!-- is-invalid -->
                                     <!-- <div class="invalid-feedback">Sorry, that username's taken. Try another?</div> -->
                                 </div>
 
                                 <button type="button" name="openRegisterBtn" id="openRegisterBtn" class="btn btn-link" onclick="openRegister()">
-                                    Don't you have an account? Create a new one here!
+                                    ¿No tienes una cuenta? ¡Crea una ahora!
                                 </button>
                                 <button type="submit" class="btn btn-block btn-primary">Login!</button>
                             </form>
@@ -148,7 +159,7 @@
                             <form action="registerController.php" method="post">
 
                                 <div class="form-group"><!-- has-success -->
-                                    <label class="form-control-label" for="username">Username</label>
+                                    <label class="form-control-label" for="username">Usuario</label>
                                     <input type="text" placeholder="ex. User021" class="form-control" name="name" id="name"> <!-- is-valid -->
                                     <!-- <div class="valid-feedback">Success! You've done it.</div> -->
                                 </div>
@@ -160,21 +171,21 @@
                                 </div>
 
                                 <div id="pswDiv" class="form-group"><!-- has-danger -->
-                                    <label class="form-control-label" for="passwordInput">Password</label>
-                                    <input type="password" placeholder="password" class="form-control" id="passwordInput" name="passwd" onchange="isValidPsw()"><!-- is-invalid -->
+                                    <label class="form-control-label" for="passwordInput">Contraseña</label>
+                                    <input type="password" placeholder="······" class="form-control" id="passwordInput" name="passwd" onchange="isValidPsw()"><!-- is-invalid -->
                                     <!-- <div class="invalid-feedback">Sorry, that username's taken. Try another?</div> -->
                                 </div>
 
                                 <div id="repeatPswDiv" class="form-group"><!-- has-danger -->
-                                    <label class="form-control-label" for="repeatPasswordInput">Repeat Password</label>
-                                    <input type="password" placeholder="Repeat password" class="form-control" id="repeatPasswordInput" onkeyup="isSamePsw()"><!-- is-invalid -->
+                                    <label class="form-control-label" for="repeatPasswordInput">Repite la Contraseña</label>
+                                    <input type="password" placeholder="······" class="form-control" id="repeatPasswordInput" onkeyup="isSamePsw()"><!-- is-invalid -->
                                     <!-- <div class="invalid-feedback">Sorry, that username's taken. Try another?</div> -->
                                 </div>
 
                                 <button type="button" name="openLoginBtn" id="openLoginBtn" class="btn btn-link" onclick="openLogin()">
-                                    Do you already have an account? Just login here!
+                                    ¿Tienes ya una cuenta? ¡Entra ya!
                                 </button>
-                                <button id="registerBtn" type="button" class="btn btn-block btn-primary">Register!</button>
+                                <button id="registerBtn" type="button" class="btn btn-block btn-primary">Regístrate</button>
                             </form>
                         </div>
                     </div>

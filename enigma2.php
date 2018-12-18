@@ -23,14 +23,14 @@
                 <div class="collisionsquare"></div>
             </div>
             <div id="restart_div" class="bg-dark">
-                <button id="restart" class="rounded">
+                <button id="restart" class="buttonEnter rounded">
                     Comenzar de nuevo<br>
                     <small class="small_text">(apreta Enter)</small>
                 </button>
             </div>
             <div id="next_div" class="bg-primary">
                 ¡Buen trabajo capitán!</br>
-                <button id="nextEnigma" class="rounded">
+                <button id="nextEnigma" class="buttonEnter rounded">
                     Guardar progreso<br>
                     <small class="small_text">(apreta Enter)</small>
                 </button>
