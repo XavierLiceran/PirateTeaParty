@@ -9,7 +9,7 @@
 
   <div class="row">
 <?php 
-if($_SESSION['user']['path'] >= 0){
+if($_SESSION['user']['path'] >=0){
 ?>
   <div class="col-sm-12 col-md-4 col-lg-4 mt-1 enigma" enigma = "1" style="margin-top:20px; display: none;">
     <div class="card h-100" onclick = "redirigir('enigma1.php')">

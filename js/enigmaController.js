@@ -15,5 +15,5 @@ window.onload = function() {
 
 
 function redirigir(ruta){
-    window.location.replace("http://localhost:8080/pirateteaparty/" + ruta);
+    window.location.replace("http://localhost/PirateTeaParty/" + ruta);
 }
