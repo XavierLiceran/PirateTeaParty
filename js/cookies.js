@@ -31,14 +31,14 @@ function getCookie(name) {
 function eraseCookie(name) {   
     document.cookie = name+'=; Max-Age=-99999999;';  
 }
-function comprobarExiste() {
-    var myCookie = getCookie("MyCookie");
+function comprobarCookie(name) {
+    var myCookie = getCookie(name);
 
     if (myCookie == null) {
-        // do cookie doesn't exist stuff;
+        return false;
     }
     else {
-        // do cookie exists stuff
+        return true;
     }
 }
 
