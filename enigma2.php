@@ -14,6 +14,9 @@
                     <h4 class="card-title">Score: <span id="score">0</span></h4>
                     <p class="card-text">¡Capitán! Ya tenemos a los esclavos que financiaran nuestra flota. Vamos a hacernos paso a través de los barcos mercantes para evitar que nos sigan!</p>
                 </div>
+                <div class="card-footer">
+                    Xavier Licerán
+                </div>
             </div>
         </div>
         <div class="col-9">

@@ -48,12 +48,12 @@ $(function(){
 
     var maxScore = 100;
 
-    if(game_over_count == 3){
+    if(game_over_count >= 3){
         maxScore = maxScore - 25;
-    } else if(game_over_count == 6){
-        maxScore = maxScore - 25;
-    } else if(game_over_count == 9){
-        maxScore = maxScore - 25;
+    } else if(game_over_count >= 6){
+        maxScore = maxScore - 50;
+    } else if(game_over_count >= 9){
+        maxScore = maxScore - 75;
     }
 /**/
 
@@ -177,7 +177,7 @@ function repeat(){
         score_counter++;
 
         if(score_counter % 20 == 0){
-            score.text(parseInt(score.text()) + 1);
+            score.text(parseInt(score.text()) + 1 + '/' + maxScore);
         }
 
         if(score_counter % 200 == 0) {
