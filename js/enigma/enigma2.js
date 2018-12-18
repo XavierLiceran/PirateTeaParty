@@ -33,7 +33,7 @@ $(function(){
     //Variables controlador juego
     var game_over = false;
     if(!comprobarCookie('enigma2counter')){
-        setCookie('enigma2counter', 0, '30 Dec 2018 12:00:00 UTC');
+        setCookie('enigma2counter', 1, '30 Dec 2018 12:00:00 UTC');
     }
     var game_over_count = parseInt(getCookie('enigma2counter'));
 
@@ -48,12 +48,12 @@ $(function(){
 
     var maxScore = 100;
 
-    if(game_over_count == 3){
+    if(game_over_count >= 3){
         maxScore = maxScore - 25;
-    } else if(game_over_count == 6){
-        maxScore = maxScore - 25;
-    } else if(game_over_count == 9){
-        maxScore = maxScore - 25;
+    } else if(game_over_count >= 6){
+        maxScore = maxScore - 50;
+    } else if(game_over_count >= 9){
+        maxScore = maxScore - 75;
     }
 /**/
 
@@ -157,9 +157,10 @@ rbutton.click(function(){
 
 function repeat(){
     if(game_over == false){
-
+    
         if(collision(player, enemy1) || collision(player, enemy2) || collision(player, enemy3)){
-            setCookie('enigma2counter', game_over_count++, '30 Dec 2018 12:00:00 UTC');
+            game_over_count++;
+            setCookie('enigma2counter', parseInt(game_over_count), '30 Dec 2018 12:00:00 UTC');
             endGame(function(){
                 rdiv.slideDown();
                 rbutton.focus();
@@ -176,7 +177,7 @@ function repeat(){
         score_counter++;
 
         if(score_counter % 20 == 0){
-            score.text(parseInt(score.text()) + 1);
+            score.text(parseInt(score.text()) + 1 + '/' + maxScore);
         }
 
         if(score_counter % 200 == 0) {

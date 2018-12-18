@@ -2,8 +2,9 @@
         var timeoutInMiliseconds = 120000;
         var timeoutId; 
 
+    
         function startTimer() { 
-            timeoutId = window.setTimeout(doInactive, timeoutInMiliseconds)
+            timeoutId = window.setTimeout(doInactive, timeoutInMiliseconds);
         }
         
         function doInactive() {
@@ -17,12 +18,12 @@
             document.addEventListener("keypress", resetTimer, false);
             document.addEventListener("touchmove", resetTimer, false);
             
-            startTimer();
+            startCaducidad();
         }
         
         function resetTimer() { 
             window.clearTimeout(timeoutId)
-            startTimer();
+            startCaducidad();
         }
 
         function initTimer () {
