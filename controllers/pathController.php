@@ -9,6 +9,6 @@ if(isset($_POST['path'])){
     actualizarPath( $_SESSION['user']['path'], $_SESSION['user']['email']);
 }
 
-header("Location: /PirateTeaParty/controllers/enigmaController.php");
+header("Location: /PirateTeaParty/enigmaController.php");
 
 ?>
