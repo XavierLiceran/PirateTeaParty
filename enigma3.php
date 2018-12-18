@@ -7,11 +7,33 @@
 <?php startblock('principal')?>
 <link rel="stylesheet" href="css/enigma/enigma3.css">
 <div class="container-fluid">
+    <div id = "UI" class="container col-6 float-left">
+        <div id = "lepanto" class="card ">
+            <img  class="card-img-top " src="/PirateTeaParty/img/enigma/enigma3/batalladelepanto2.jpg" alt="">
+            <div id="card1" class="card-body">
+                <h4 class="card-title">Batalla de Lepanto</h4>
+                <div id = "instrucciones">
+                    <img id = "imagen"  class = "float-left"   src="" alt="">
+                    <p id ="text" class="card-text float-right">
+                    Nos informan que una gran flota infiel se acerca a nuestas costas, se hacen llamar corsarios y estan al servicio del Imperio Otomano, pero no son mas que piratas que saquean nuestras rutas comerciales. 
+                    <br/>
+                    Hemos reunido toda la flota cristiana y hoy, en el glorioso santo de la Virgen del Rosario, saldremos victoriosos en nuestra santa empresa.
+                    </p>
+                </div>
+
+
+                
+            </div>
+            <div id = "botones" class="card-footer">
+                <button type="button" onclick="nextCard()" style="float: right" class="btn col-3" id="btn1">Siguiente</button>
+            </div>
+    </div>
+    </div>
     
 
-    <div class = "d-inline-block">
+    <div id="board" class = "float-right col-6">
         
-        <table class = "" id="Board">
+        <table class = "">
         <thead>
             <tr>
             <th ></th>
@@ -163,6 +185,9 @@
 <?php endblock()?>
 
 <?php startblock('scripts')?>
-<script src="js/enigma/enigma3/enigmaFunctions.js">   </script>
+<script src="js/enigma/enigma3/definitions.js">     </script>
+<script src="js/enigma/enigma3/enigmaFunctions.js"> </script>
+<script src="js/enigma/enigma3/UI.js">              </script>
+
 
 <?php endblock()?>

@@ -15,6 +15,7 @@ try {
  
     // guardamos el resultado en formato array asociativo.
     $result = $stmt->fetchAll();
+    unset($result[0]['user']['passwd']);
     //var_dump($result);
     
 }
@@ -49,7 +50,23 @@ function insertUser($email, $passwd, $name){
     $conn = closeBD();        
 }
 
+function actualizarPath($email , $path){
+    try {
+        $conn = openBD();
+        $stmt = $conn->prepare("UPDATE user SET `path` = :path WHERE `email` = :email"); 
+        //var_dump($stmt);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':path', $path);
+        //$stmt->bindParam(':surname', $surname);
+        $stmt->execute();
 
+    }
+    catch(PDOException $e) {
+        //$result = ["error" => $e];
+        $_SESSION['feedback']['error'] = errorMessage($e);
+    }    
+    $conn = closeBD();  
+}
 
 
 ?>
