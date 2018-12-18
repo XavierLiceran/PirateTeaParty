@@ -1,0 +1,45 @@
+.juego {
+    
+    border-color : rgb(0, 0, 0);
+    border-style : solid;
+    width : 600px;
+    height: 400px;
+}
+.bola{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 11px;
+    left: 383px;
+
+  
+}
+.barco {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    background-image: url(../../img/barco2.png);
+    background-size: 80px 40px;
+    background: #000000;
+
+}
+.marcador {
+    width: 600px;
+    height: 150px;
+    padding: 3px;
+    background-image: url(../../img/calavera.png);
+    background-size: 200px 100px;
+    background-repeat: no-repeat;
+    background-position: 200px 50px;
+    background-color: #000000; 
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-color: #000000; 
+    border-style : solid;
+}
+
+.textoestatico {
+    color: #FFFFFF;
+    font-family : "Arial";
+    font-weight : bold;
+}
