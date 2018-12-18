@@ -117,3 +117,11 @@
 </footer>
 
 <?php endblock()?>
+
+<?php startblock('scripts')?>
+<script>
+    if(comprobarCookie('enigma2counter')){
+        eraseCookie('enigma2counter');
+    }
+</script>
+<?php endblock()?>

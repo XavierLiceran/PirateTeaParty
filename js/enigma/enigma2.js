@@ -31,7 +31,7 @@ $(function(){
     //Variables controlador juego
     var game_over = false;
     if(!comprobarCookie('enigma2counter')){
-        setCookie('enigma2counter', 1, '30 Dec 2018 12:00:00 UTC');
+        setCookie('enigma2counter', 1, 30);
     }
     var game_over_count = parseInt(getCookie('enigma2counter'));
 
@@ -154,7 +154,7 @@ function repeat(){
     
         if(collision(player, enemy1) || collision(player, enemy2) || collision(player, enemy3)){
             game_over_count++;
-            setCookie('enigma2counter', parseInt(game_over_count), '30 Dec 2018 12:00:00 UTC');
+            setCookie('enigma2counter', parseInt(game_over_count), 30);
             endGame(function(){
                 rdiv.slideDown();
                 rbutton.focus();

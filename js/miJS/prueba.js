@@ -12,9 +12,6 @@ function openRegister() {
 function openLogin() {
     $('#loginModal').modal('show');
     $('#registerModal').modal('hide');
-    if(comprobarCookie('enigma2counter')){
-        eraseCookie('enigma2counter');
-    }
 }
 
 //Función que cambia el Btn de Register para que haga su función
@@ -43,7 +40,7 @@ function isValidPsw(){
         var newDiv = document.createElement("div");
         newDiv.setAttribute("id", "pswFeedback");
         newDiv.setAttribute("class", "invalid-feedback");
-        var text = document.createTextNode("Password is less than 6 characters!");
+        var text = document.createTextNode("¡La contraseña tiene menos de 6 carácteres!");
 
         newDiv.appendChild(text);
         document.getElementById("pswDiv").appendChild(newDiv);
@@ -57,7 +54,7 @@ function isValidPsw(){
         var newDiv = document.createElement("div");
         newDiv.setAttribute("id", "pswFeedback");
         newDiv.setAttribute("class", "valid-feedback");
-        var text = document.createTextNode("Password is strong!");
+        var text = document.createTextNode("¡La contraseña es fuerte!");
 
         newDiv.appendChild(text);
         document.getElementById("pswDiv").appendChild(newDiv);
@@ -89,7 +86,7 @@ function isSamePsw(){
         document.getElementById("repeatPasswordInput").className = "form-control is-valid";
         
         newDiv.setAttribute("class", "valid-feedback");
-        var text = document.createTextNode("Passwords match!");
+        var text = document.createTextNode("¡Las contraseñas coinciden!");
 
         validRepeatPsw = true;
 
@@ -98,7 +95,7 @@ function isSamePsw(){
         document.getElementById("repeatPasswordInput").className = "form-control is-invalid";
         
         newDiv.setAttribute("class", "invalid-feedback");
-        var text = document.createTextNode("Passwords doesn't match!");
+        var text = document.createTextNode("¡Las contraseñas no coinciden!");
 
         validRepeatPsw = false;
     }
@@ -139,7 +136,7 @@ function validate() {
         emailInput = "form-control is-valid";
         
         newDiv.setAttribute("class", "valid-feedback");
-        var text = document.createTextNode("Valid Email!!");
+        var text = document.createTextNode("¡Email válido!");
 
         validEmail = true;
 
@@ -148,7 +145,7 @@ function validate() {
         emailInput = "form-control is-invalid";
 
         newDiv.setAttribute("class", "invalid-feedback");
-        var text = document.createTextNode("Invalid Email!!");
+        var text = document.createTextNode("¡Email no válido!");
 
         validEmail = false;
     }
