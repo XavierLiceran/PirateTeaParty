@@ -9,7 +9,6 @@
     }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,9 +38,10 @@
 
     
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
-
+    <script src="./js/caducidad.js"></script>
 </head>
-<body>
+<body onload="initTimer()">
+    
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark gradient">
             <!-- LOGO -->

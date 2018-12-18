@@ -7,8 +7,15 @@ function nextCard(){
     texto.innerHTML = text[cardNumber];
     imagen.setAttribute("src", img[cardNumber]); 
 
-
+    if(cardNumber >2){
+        imagen.classList.add('col-6', 'float-left');
+        texto.classList.add('col-6', 'float-right');
+    }
     
+    else if(cardNumber < 3){
+        imagen.classList.remove('col-6', 'float-left');
+        texto.classList.remove('col-6', 'float-right');
+    }
 
 }
 function previousCard(){
@@ -18,7 +25,16 @@ function previousCard(){
     buttons(false);
     texto.innerHTML = text[cardNumber];
     imagen.setAttribute("src", img[cardNumber]); 
-
+    
+    if(cardNumber >2){
+        imagen.classList.add('col-6', 'float-left');
+        texto.classList.add('col-6', 'float-right');
+    }
+    
+    else if(cardNumber < 3){
+        imagen.classList.remove('col-6', 'float-left');
+        texto.classList.remove('col-6', 'float-right');
+    }
     
 }
 
