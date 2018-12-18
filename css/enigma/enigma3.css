@@ -13,12 +13,18 @@
 	padding: 0;
 }
 */
+
+/* .tamanyo{
+	max-width: 200px;
+	
+	height: 200px;
+} */
 #botones{
 	margin-bottom: 10px;
 }
 #lepanto{
 	width: 552px;
-	height: 650px;
+	/* height: 650px; */
 	margin: auto;
 	background-color: #D9EAF0
 }

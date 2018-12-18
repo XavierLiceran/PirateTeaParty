@@ -1,5 +1,4 @@
 window.onload = function() {
-    console.log("hola");
     enigmas = document.getElementsByClassName("enigma");
 
     Array.prototype.forEach.call(enigmas,function(enigma) {
@@ -13,3 +12,8 @@ window.onload = function() {
 
     });
 };
+
+
+function redirigir(ruta){
+    window.location.replace("http://localhost:8080/pirateteaparty/" + ruta);
+}

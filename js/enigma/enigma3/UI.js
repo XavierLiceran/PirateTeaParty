@@ -8,12 +8,12 @@ function nextCard(){
     imagen.setAttribute("src", img[cardNumber]); 
 
     if(cardNumber >2){
-        imagen.classList.add('col-6', 'float-left');
+        imagen.classList.add('col-6', 'float-left','tamanyo');
         texto.classList.add('col-6', 'float-right');
     }
     
     else if(cardNumber < 3){
-        imagen.classList.remove('col-6', 'float-left');
+        imagen.classList.remove('col-6', 'float-left', 'tamanyo');
         texto.classList.remove('col-6', 'float-right');
     }
 
@@ -27,12 +27,12 @@ function previousCard(){
     imagen.setAttribute("src", img[cardNumber]); 
     
     if(cardNumber >2){
-        imagen.classList.add('col-6', 'float-left');
-        texto.classList.add('col-6', 'float-right');
+        imagen.classList.add('col-6', 'float-left', 'tamanyo');
+        texto.classList.add('col-6', 'float-right',);
     }
     
     else if(cardNumber < 3){
-        imagen.classList.remove('col-6', 'float-left');
+        imagen.classList.remove('col-6', 'float-left','tamanyo');
         texto.classList.remove('col-6', 'float-right');
     }
     
@@ -45,7 +45,7 @@ function buttons(next){
     }
     else if (next && !document.getElementById("btn2") && cardNumber < 5){
         var btn2 = document.createElement("button");
-        btn2.classList.add("btn", "col-3");
+        btn2.classList.add("btn-sm", "col-3");
         btn2.setAttribute("onclick","previousCard()");
         btn2.setAttribute("id","btn2");
         btn2.setAttribute("style","float: left;");
@@ -67,7 +67,7 @@ function buttons(next){
     else if(!next && cardNumber === 4){
         if(empezado){
             var btn1 = document.createElement("button");
-            btn1.classList.add("btn", "col-3");
+            btn1.classList.add("btn-sm", "col-3");
             btn1.setAttribute("onclick","nextCard()");
             btn1.setAttribute("id","btn1");
             btn1.setAttribute("style","float: right;");
