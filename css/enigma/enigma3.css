@@ -24,7 +24,7 @@
 }
 #lepanto{
 	width: 552px;
-	/* height: 650px; */
+	height: 650px;
 	margin: auto;
 	background-color: #D9EAF0
 }
@@ -51,7 +51,8 @@ table {
 	display: inline-block;
 
   }
-.btn{
+  
+.boton {
 	background-color:#4292B2;
 }
 .Light {

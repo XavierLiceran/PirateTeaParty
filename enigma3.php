@@ -11,6 +11,7 @@
         <div id = "lepanto" class="card ">
             <img  class="card-img-top " src="/PirateTeaParty/img/enigma/enigma3/batalladelepanto2.jpg" alt="">
             <div id="card1" class="card-body">
+                
                 <h4 class="card-title">Batalla de Lepanto</h4>
                 <div id = "instrucciones" class = "row">
                     <img id = "imagen"  class = ""   src="" alt="">
@@ -22,11 +23,15 @@
                 </div>
 
 
+
                 
             </div>
+            <form id="path" action="controllers/pathController.php" method ="post">
+            <input type="hidden" name="path" value="3">
             <div id = "botones" class="card-footer">
-                <button type="button" onclick="nextCard()" style="float: right" class="btn btn-sm col-3" id="btn1">Siguiente</button>
+                <button type="button" onclick="nextCard()" style="float: right" class="btn btn-sm col-3 boton" id="btn1">Siguiente</button>
             </div>
+            </form>
     </div>
     </div>
     
@@ -186,8 +191,9 @@
 
 <?php startblock('scripts')?>
 <script src="js/enigma/enigma3/definitions.js">     </script>
-<script src="js/enigma/enigma3/enigmaFunctions.js"> </script>
 <script src="js/enigma/enigma3/UI.js">              </script>
+<script src="js/enigma/enigma3/enigmaFunctions.js"> </script>
+
 
 
 <?php endblock()?>

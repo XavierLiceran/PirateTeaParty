@@ -6,7 +6,18 @@
     }
 
     function drag(ev) {
-        ev.dataTransfer.setData("text", ev.target.id);
+
+        if(empezado){
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+        else{
+            alert(msg[msgCounter]);
+            msgCounter++;
+            if(msgCounter === 3){
+                startGame();
+            }
+        }
+        
     }
 
     function drop(ev) {
