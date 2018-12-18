@@ -29,21 +29,15 @@ if (isset($_POST['email'])){
             $_SESSION['user'] = $user[0];  
             $_SESSION['feedback']['succes'] = TRUE;     
         }
-<<<<<<< HEAD
     }
     
     if (isset($_SESSION['feedback']['succes'])) {
-        header("location: landing.php");
+        header("location: enigmaController.php");
     }  
     else{   
         header("location: index.php");
     }
 
-=======
-    }   
-     
-    header("location: index.php");
->>>>>>> 46eb00d37c990b7cc5a032520fc7c6e243f7eabb
 }
 
 ?>

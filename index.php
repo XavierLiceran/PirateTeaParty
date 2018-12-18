@@ -7,7 +7,6 @@
 
 <?php startblock('principal')?>
     <!-- Header -->
-    <button onclick="getCookie('mivariable')">Click me</button>
     <div id="obtenercookie" >
 
 </div>
