@@ -8,7 +8,7 @@
 <div id="grupo1">
   <div class="row">
   <div class="col-sm-12 col-md-3 col-lg-3 mt-1" style="margin-top:20px;">
-  <div class="card h-100">
+  <div class="card h-100" onclick="">
   <img class="card-img-top" src="/PirateTeaParty/img/enigma1.jpg" alt="actividadespirata" style="height: 270px;">
   <div class="card-body">
     <h5 class="card-title"><strong>Trivia</strong></h5>
@@ -20,7 +20,7 @@
 
   </div>
   <div class="col-sm-12 col-md-3 col-lg-3 mt-1" style="margin-top:20px;">
-  <div class="card h-100">
+  <div class="card h-100" onclick="">
   <img class="card-img-top" src="/PirateTeaParty/img/enigma2.jpg" alt="mosquete" style=" height: 270px;" >
   <div class="card-body">
     <h5 class="card-title"> <strong>Pirate Scape</strong></h5>
@@ -29,7 +29,7 @@
 </div>
   </div>
   <div class="col-sm-12 col-md-3 col-lg-3 mt-1" style="margin-top:20px;">
-  <div class="card h-100">
+  <div class="card h-100" onclick="">
   <img class="card-img-top" src="/PirateTeaParty/img/enigma3.jpg" alt="moriscos" style=" height: 270px;">
   <div class="card-body">
     <h5 class="card-title"> <strong>Batalla de Lepanto</strong></h5>
@@ -39,7 +39,7 @@
 </div>
 </div>
 <div class="col-sm-12 col-md-3 col-lg-3 mt-1" style="margin-top:20px;">
-<div class="card h-100">
+<div class="card h-100" onclick="">
   <img class="card-img-top" src="/PirateTeaParty/img/enigma4.jpg" alt="astrolabio" style=" height: 270px;">
   <div class="card-body">
     <h5 class="card-title"><strong>Rescate</strong></h5>

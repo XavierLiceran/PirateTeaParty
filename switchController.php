@@ -5,7 +5,7 @@ function switchMaster(){
     switch($_SESSION['from']){
         case "login":
         if ($_SESSION['feedback']['succes'] === TRUE){
-            succesMsg("Bienvenido " . $_SESSION['user']['name']);
+          
         }
         else{
             //var_dump($_SESSION);
