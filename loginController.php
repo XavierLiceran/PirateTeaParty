@@ -7,7 +7,8 @@ if (isset($_POST['username']))
 {
     //si la consulta ha ido bien nos devolvera los datos del usuario.
     //si la consulta ha ido mal  nos devolvera los datos del error.
-    $user = selectUser($_POST['username'], $_POST['passwd']);
+    $encPassword = md5($_POST['passwd'], false);
+    $user = selectUser($_POST['username'], $encPassword);
     $_SESSION['from'] = "login";
     if (!isset($_SESSION['feedback']['error'])){
         //pasamos por un indice de control de errores.
@@ -19,7 +20,11 @@ if (isset($_POST['username']))
     elseif (empty($user) && !isset($_SESSION['feedback']['error'])){ 
         $_SESSION['feedback']['error'] = "Usuario y/o password incorrecto" ;       
     }
-    header("Location:index.php");
-    //exit();
+    if (isset($_SESSION['feedback']['succes'])) {
+        header("location: landing.php");
+    }  
+    else{   
+        header("location: index.php");
+    }
 }
 ?>
