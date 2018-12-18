@@ -1,6 +1,7 @@
 
     
-    amenazado;
+
+
     console.log("hola");
 
     init();
@@ -84,8 +85,10 @@
         var objectPieces = document.getElementsByClassName("piece amenazado");
         Array.prototype.forEach.call(objectPieces,function(piece) {
             //solo se ejecutara para las piezas amenazadas
-
-            queensPath(piece, squareAmenaza);
+            if(getAmenaza(piece)){
+                queensPath(piece, squareAmenaza);
+            } 
+            
             
         }); 
 

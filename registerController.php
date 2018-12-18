@@ -21,10 +21,11 @@ if (isset($_POST['email'])){
         //var_dump($_SESSION); //$session tiene lo que tiene que tener
     //}
     //else{        
-        $user = selectUser($_POST['email'], $_POST['passwd']);
+        $user = selectUser($_POST['email'], $encPassword);
         if (!isset($_SESSION['feedback']['error'])){
             //pasamos por un indice de control de errores.
             //$_SESSION['feedback']['error'] = errorMessage($user['error']); 
+
             $_SESSION['user'] = $user[0];  
             $_SESSION['feedback']['succes'] = TRUE;     
         }
