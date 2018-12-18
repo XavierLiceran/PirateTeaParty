@@ -1,9 +1,4 @@
 
-    
-
-
-    console.log("hola");
-
     init();
 
     function allowDrop(ev) {

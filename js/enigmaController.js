@@ -1,8 +1,8 @@
-function mostrarEnigmas(){
+window.onload = function() {
     enigmas = document.getElementsByClassName("enigma");
 
     Array.prototype.forEach.call(enigmas,function(enigma) {
-        if (piece.getAttribute("enigma") == getCookie("pTPE")){
+        if (enigma.getAttribute("enigma") == getCookie("pTPE")){
             
             enigma.style.display = "block";
         }
@@ -10,6 +10,10 @@ function mostrarEnigmas(){
             enigma.style.display = "none";
         }
 
-    });  
+    });
+};
 
+
+function redirigir(ruta){
+    window.location.replace("http://localhost:8080/pirateteaparty/" + ruta);
 }
