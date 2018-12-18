@@ -6,7 +6,7 @@ function seguirJuego() {
     else { //---------->
         // enseñamos pregunta
 		
-		var tiempo = 10;
+		var tiempo = 30;
         display = document.querySelector('#time');
 		startTimer(tiempo, display);
 		
@@ -51,7 +51,11 @@ function mostrarResultados() {
       findeljuego+= "<span aria-hidden='true'>&times;</span>";
      findeljuego+= "</button></div>";
      findeljuego += "<button type='button' onclick='recargarPagina()' class='btn btn-success ml-2 mt-2'>Volver a intentarlo!</button>";
-     findeljuego += "<button type='button'class='btn btn-success ml-2 mt-2'><a style ='color:white; text-decoration:none;' href='enigma2.php'>Avanzar al enigma 2!</a></button>";
+     findeljuego += "<form action='/PirateTeaParty/controllers/pathController.php' method='POST'>";
+     findeljuego += "<input type ='hidden' name = 'path' value = '1' >";
+     findeljuego += "<button type='submit' class='btn btn-success ml-2 mt-2'>Finalizar</button>";
+     findeljuego += "</form>";
+     
      var element = document.getElementById("game");
      element.innerHTML = findeljuego;
     }
@@ -62,7 +66,9 @@ function mostrarResultados() {
         findeljuego+= "<span aria-hidden='true'>&times;</span>";
        findeljuego+= "</button></div>";
        findeljuego += "<button type='button' onclick='recargarPagina()' class='btn btn-success ml-2 mt-2'>Volver a intentarlo!</button>";
-       findeljuego += "<button type='button'class='btn btn-success ml-2 mt-2'><a style ='color:white; text-decoration:none;' href='enigma2.php'>Avanzar al enigma 2!</a></button>";
+       findeljuego += "<form action='/PirateTeaParty/controllers/pathController.php' method='POST'>";
+       findeljuego += "<button type='submit' onclick='' class='btn btn-success ml-2 mt-2'>Finalizar</button>";
+       findeljuego += "</form>";
        var element = document.getElementById("game");
        element.innerHTML = findeljuego;
     }
@@ -74,7 +80,9 @@ function mostrarResultados() {
         findeljuego+= "<span aria-hidden='true'>&times;</span>";
        findeljuego+= "</button></div>";
        findeljuego += "<button type='button' onclick='recargarPagina()' class='btn btn-success ml-2 mt-2'>Volver a intentarlo!</button>";
-       findeljuego += "<button type='button'class='btn btn-success ml-2 mt-2'><a style ='color:white; text-decoration:none;' href='enigma2.php'>Avanzar al enigma 2!</a></button>";
+       findeljuego += "<form action='/PirateTeaParty/controllers/pathController.php' method='POST'>";
+       findeljuego += "<button type='submit' onclick='' class='btn btn-success ml-2 mt-2'>Finalizar</button>";
+       findeljuego += "</form>";
        var element = document.getElementById("game");
        element.innerHTML = findeljuego;
              

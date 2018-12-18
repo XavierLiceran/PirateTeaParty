@@ -1,18 +1,10 @@
-<?php include $_SERVER['DOCUMENT_ROOT'] .'/PirateTeaParty/templates/master.php' ?>
-<?php startblock('titulo')?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/PirateTeaParty/templates/master.php' ?>
+<?php startblock('titulo') ?>
 Enigma nº1 : datos importantes
-<?php endblock()?>
+<?php endblock() ?>
 
-<?php startblock('principal')?>
+<?php startblock('principal') ?>
 <div class="container">
-
-<div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
-  <strong><h2 style="font-weight:bold;">Lee atentamente para aprender datos curiosos sobre los piratas berberiscos en la península,habrá un questionario posteriormente grumete!</h2></strong> 
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-
   <div id="grupo1">
   <div class="row">
   <div class="col-sm-12 col-md-3 col-lg-3 mt-1" style="margin-top:20px;">
@@ -45,7 +37,7 @@ Las principales armas de fuego que utilizaban los piratas eran la pistola, arcab
   <div class="card-body">
     <h5 class="card-title"> <strong>Moriscos nacidos en la península </strong></h5>
     <p class="card-text"><p>En el año 1609, se decretó su expulsión de la Península. Mas de 300.000 personas fueron expulsadas de España, descendientes de los que llevaban siglos viviendo en la Península Ibérica. No se confiaba en los moriscos por la colaboración de algunos de ellos con los ataques berberiscos.</p>
-El traslado de moriscos al norte de África, se fue haciendo progresivamente, hasta llegar a ser una importante colonia. Lamentablemente para ellos, los que llegaron a lugares de piratas como Argel o Túnez tuvieron la peor suerte. La mayoría de ellos, acabaron como esclavos de estos piratas que no les reconocían como musulmanes.
+Lamentablemente para ellos, los que llegaron a lugares de piratas como Argel o Túnez tuvieron la peor suerte. La mayoría de ellos, acabaron como esclavos de estos piratas que no les reconocían como musulmanes.
 </p>
   </div>
 </div>
@@ -68,9 +60,9 @@ El traslado de moriscos al norte de África, se fue haciendo progresivamente, ha
   <img class="card-img-top" src="./img/canon.jpg" alt="canones" style=" height: 270px;">
   <div class="card-body">
     <h5 class="card-title"><strong>Uso de cañones </strong></h5>
-    <p class="card-text">Lo último que deseaban los piratas era perder su presa. Ya que en ella estaba su botín. </p>
+    <p class="card-text">Lo último que deseaban los piratas era perder su presa.<br> Por lo que solo usaban cañones en caso extrictamente necesario ,ya que se podría destruir parte de su botín. </p>
     <p>
-Estas bolas solían ser de diámetros de 13 cm, 14 cm y 15 cm.
+Las bolas que disparban solían ser de diámetros de 13 cm, 14 cm y 15 cm.
 </p>
   </div>
 </div>
@@ -81,7 +73,7 @@ Estas bolas solían ser de diámetros de 13 cm, 14 cm y 15 cm.
   <div class="card-body">
     <h5 class="card-title"><strong>Su alianza del imperio Otomano y Francia </strong></h5>
     <p class="card-text">Para poder hacer frente a la marina Española, Francisco I de Francia se unió al Imperio Otomano, en su lucha por el control del Mediterráneo.
-En 1536, establece la primera alianza secreta con los turcos. En ella los franceses podrían comerciar en todos los puertos turcos. dandoles esa gran ventaja, durante siglos.
+En 1536, establece la primera alianza secreta con los turcos. <br>En ella los franceses podrían comerciar en todos los puertos turcos. dandoles esa gran ventaja, durante siglos.
 En varias ocasiones las flotas conjuntas de franceses y piratas berberiscos (los principales piratas del Mediterráneo), atacaron a la marina y tropas españolas.
 </p>
   </div>
@@ -99,10 +91,7 @@ En varias ocasiones las flotas conjuntas de franceses y piratas berberiscos (los
   </div>
 </div>
 </div>
-<div id="preguntas" style="clear:both;margin-top:10px;margin-bottom:10px;">
-<button type="button"class="btn btn-success"><a style ="color:white; text-decoration:none;" href="enigma1.php">Ir a las preguntas!</a></button>
 </div>
-</div>
-<?php endblock()?>
-<?php startblock('scripts')?>
-<?php endblock()?>
+<?php endblock() ?>
+<?php startblock('scripts') ?>
+<?php endblock() ?>

@@ -17,12 +17,10 @@
         <div class="card border-secondary mb-3">
             <div class="card-header">Estaciones</div>
             <div class="card-body">
-                <form action="crearCookie.php">
-                    <input type="submit" class="btn btn-primary" name ="estacion1" value="Asignar estación 1" />
-                    <input type="submit" class="btn btn-primary" name ="estacion2" value="Asignar estación 2" />
-                    <input type="submit" class="btn btn-primary" name ="estacion3" value="Asignar estación 3" />
-                    <input type="submit" class="btn btn-primary" name ="estacion4" value="Asignar estación 4" />
-                </form>
+                <button type="submit" class="btn btn-primary" name ="estacion1" value="Asignar estación 1" onclick="setCookie('pirateTeaPartyEstacion', 1, '30 Dec 2018 12:00:00 UTC')">Asignar estación 1</button>
+                <button type="submit" class="btn btn-primary" name ="estacion2" value="Asignar estación 2" onclick="setCookie('pirateTeaPartyEstacion', 2, '30 Dec 2018 12:00:00 UTC')">Asignar estación 2</button>
+                <button type="submit" class="btn btn-primary" name ="estacion3" value="Asignar estación 3" onclick="setCookie('pirateTeaPartyEstacion', 3, '30 Dec 2018 12:00:00 UTC')">Asignar estación 3</button>
+                <button type="submit" class="btn btn-primary" name ="estacion4" value="Asignar estación 4" onclick="setCookie('pirateTeaPartyEstacion', 4, '30 Dec 2018 12:00:00 UTC')">Asignar estación 4</button>
             </div>
         </div>
         <div class="card border-secondary  mb-3">
