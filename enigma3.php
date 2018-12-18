@@ -12,9 +12,9 @@
             <img  class="card-img-top " src="/PirateTeaParty/img/enigma/enigma3/batalladelepanto2.jpg" alt="">
             <div id="card1" class="card-body">
                 <h4 class="card-title">Batalla de Lepanto</h4>
-                <div id = "instrucciones">
-                    <img id = "imagen"  class = "float-left"   src="" alt="">
-                    <p id ="text" class="card-text float-right">
+                <div id = "instrucciones" class = "row">
+                    <img id = "imagen"  class = ""   src="" alt="">
+                    <p id ="text" class="">
                     Nos informan que una gran flota infiel se acerca a nuestas costas, se hacen llamar corsarios y estan al servicio del Imperio Otomano, pero no son mas que piratas que saquean nuestras rutas comerciales. 
                     <br/>
                     Hemos reunido toda la flota cristiana y hoy, en el glorioso santo de la Virgen del Rosario, saldremos victoriosos en nuestra santa empresa.
@@ -25,7 +25,7 @@
                 
             </div>
             <div id = "botones" class="card-footer">
-                <button type="button" onclick="nextCard()" style="float: right" class="btn col-3" id="btn1">Siguiente</button>
+                <button type="button" onclick="nextCard()" style="float: right" class="btn btn-sm col-3" id="btn1">Siguiente</button>
             </div>
     </div>
     </div>
