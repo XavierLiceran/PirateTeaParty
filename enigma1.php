@@ -49,7 +49,8 @@
 
 <hr style="margin-top: 20px">
             <footer>
-                <p id="progress">Pregunta x de y</p>
+                <h3 id="progress">Pregunta x de y</h3>
+                <h4 style="margin-top:80px;"> Hecho por <a href="introductionCard.php"><span style="color:blue;"> Dani Reyes </span></a> </h4>
             </footer>
 </div>
 </div>

@@ -8,7 +8,7 @@ function seguirJuego() {
 		
 		var tiempo = 30;
         display = document.querySelector('#time');
-		startTimer(tiempo, display);
+		empezartiempo(tiempo, display);
 		
         var element = document.getElementById("question");
         element.innerHTML = juego.getQuestionIndex().text;
@@ -108,7 +108,7 @@ var juego = new Juego(preguntas);
 // despues de mostrar todo y poner todo actualizado , mostramos la siguiente pregunta y cargamos las opciones (siempre que no haya acabado las preguntas)
 seguirJuego();
 
-function startTimer(duration, display) { //temporizador
+function empezartiempo(duration, display) { //temporizador
     timer = duration;
 	llamarTemporizador();
    miInterval= setInterval(function () {
