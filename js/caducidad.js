@@ -12,21 +12,21 @@
             //alert("cierra");
         }
         
-        function setupTimers () {
+        function setupTimers() {
             document.addEventListener("mousemove", resetTimer, false);
             document.addEventListener("mousedown", resetTimer, false);
             document.addEventListener("keypress", resetTimer, false);
             document.addEventListener("touchmove", resetTimer, false);
             
-            startCaducidad();
+            startTimer();
         }
         
         function resetTimer() { 
             window.clearTimeout(timeoutId)
-            startCaducidad();
+            startTimer();
         }
 
-        function initTimer () {
+        function initTimer() {
             setupTimers();
         }    
  
