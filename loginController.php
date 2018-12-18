@@ -21,7 +21,15 @@ if (isset($_POST['username']))
         $_SESSION['feedback']['error'] = "Usuario y/o password incorrecto" ;       
     }
     if (isset($_SESSION['feedback']['succes'])) {
+<<<<<<< HEAD
         header("location: enigmaController.php");
+=======
+<<<<<<< HEAD
+        header("location: enigmaController.php");
+=======
+        header("location:enigmaController.php");
+>>>>>>> 272ed6dbe62d25ae78edbd09d02d3d1ad795101e
+>>>>>>> a69f14bd639e4b03dd05b4e3842abf1e8a902c05
     }  
     else{   
         header("location: index.php");
