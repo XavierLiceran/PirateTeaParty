@@ -89,6 +89,7 @@ a:hover {
 .btn-primary:hover,
 .open .dropdown-toggle.btn-primary {
     color: #fff;
+    background-color: #fec503;
     border-color: #f6bf01
 }
 

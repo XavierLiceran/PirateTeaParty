@@ -3,6 +3,7 @@
     Enigmas
 <?php endblock()?>
 <?php startblock('principal')?>
+
 <div class="container">
 <div id="grupo1">
   <div class="row">
@@ -16,6 +17,7 @@
 </p>
   </div>
 </div>
+
   </div>
   <div class="col-sm-12 col-md-3 col-lg-3 mt-1" style="margin-top:20px;">
   <div class="card h-100">
