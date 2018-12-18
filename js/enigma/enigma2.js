@@ -19,8 +19,6 @@ $(function(){
     var ndiv = $('#next_div');
     var nbutton = $('#nextEnigma');
 
-
-
     //Variables de configuración
     var cont_left = parseInt(container.css('left'));
     var cont_width = parseInt(container.width());
@@ -48,9 +46,9 @@ $(function(){
 
     var maxScore = 100;
 
-    if(game_over_count >= 3){
+    if(game_over_count >= 3 && game_over_count<6){
         maxScore = maxScore - 25;
-    } else if(game_over_count >= 6){
+    } else if(game_over_count >= 6 && game_over_count<9){
         maxScore = maxScore - 50;
     } else if(game_over_count >= 9){
         maxScore = maxScore - 75;
@@ -147,10 +145,6 @@ function endGame($callback){
     $callback();
 }
 
-nbutton.click(function(){
-    //Actualizar cookie
-});
-
 rbutton.click(function(){
     location.reload();
 });
@@ -170,7 +164,8 @@ function repeat(){
         if(parseInt(score.text()) == maxScore){
             endGame(function(){
                 ndiv.slideDown();
-                nbutton.focus()
+                nbutton.focus();
+                eraseCookie('enigma2counter');
             });
         }
 

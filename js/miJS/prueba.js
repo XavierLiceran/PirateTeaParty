@@ -12,6 +12,9 @@ function openRegister() {
 function openLogin() {
     $('#loginModal').modal('show');
     $('#registerModal').modal('hide');
+    if(comprobarCookie('enigma2counter')){
+        eraseCookie('enigma2counter');
+    }
 }
 
 //Función que cambia el Btn de Register para que haga su función

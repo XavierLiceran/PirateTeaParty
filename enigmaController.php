@@ -11,7 +11,7 @@
 <?php 
 if($_SESSION['user']['path'] >=0){
 ?>
-  <div class="col-sm-12 col-md-4 col-lg-4 mt-1 enigma" enigma = "1" style="margin-top:20px; display: none;">
+  <div class="col-sm-12 col-md-4 col-lg-4 mx-auto mt-2 enigma" enigma = "1" style="margin-top:20px; display: none;">
     <div class="card h-100" onclick = "redirigir('enigma1.php')">
   <img class="card-img-top" src="/PirateTeaParty/img/enigma1.jpg" alt="actividadespirata" style="height: 270px;">
   <div class="card-body">
@@ -27,7 +27,7 @@ if($_SESSION['user']['path'] >=0){
 } 
 if($_SESSION['user']['path'] >= 1){
 ?>
-  <div class="col-sm-12 col-md-4 col-lg-4 mt-1 enigma" enigma = "2" style="margin-top:20px;display: none;">
+  <div class="col-sm-12 col-md-4 col-lg-4 mx-auto mt-2 enigma" enigma = "2" style="margin-top:20px;display: none;">
   
   <div class="card h-100" onclick = "redirigir('enigma2.php')">
   <img class="card-img-top" src="/PirateTeaParty/img/enigma2.jpg" alt="mosquete" style=" height: 270px;" >
@@ -41,7 +41,7 @@ if($_SESSION['user']['path'] >= 1){
 } 
 if($_SESSION['user']['path'] >= 2){
 ?>
-  <div class="col-sm-12 col-md-4 col-lg-4 mt-1 enigma"  enigma = "3" style="margin-top:20px;display: none;">
+  <div class="col-sm-12 col-md-4 col-lg-4 mx-auto mt-2 mt-1 enigma"  enigma = "3" style="margin-top:20px;display: none;">
   <div class="card h-100" onclick = "redirigir('enigma3.php')">
   <img class="card-img-top" src="/PirateTeaParty/img/enigma3.jpg" alt="moriscos" style=" height: 270px;">
   <div class="card-body">

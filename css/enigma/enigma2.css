@@ -16,18 +16,27 @@
 
 .barco {
     position: absolute;
-    background-image: url(../../img/enigma/enigma2/corsair_sprite.png);
+    background-image: url(../../img/enigma/enigma2/pirate_sprite.png);
     
     height: 185px;
     width: 91px;
     /* background-color: #fff; */
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 #barcoJugador {
-    background-image: url(../../img/enigma/enigma2/pirate_sprite.png);
+    background-image: url(../../img/enigma/enigma2/corsair_sprite.png);
     bottom: 8%;
     left: 45%;
-
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 #barcoEnemigo {
@@ -66,9 +75,10 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    color: white;
+    color: black;
     text-align: center;
     display: none;
+    background-color: #2e667d;
 }
 
 .buttonEnter {

@@ -53,7 +53,7 @@ function insertUser($email, $passwd, $name){
 function actualizarPath($email , $path){
     try {
         $conn = openBD();
-        $stmt = $conn->prepare("UPDATE user SET `path` = :path WHERE `email` = :email"); 
+        $stmt = $conn->prepare("UPDATE user SET path = :path WHERE email = :email"); 
         //var_dump($stmt);
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':path', $path);

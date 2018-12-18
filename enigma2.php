@@ -12,7 +12,7 @@
                 <div class="card-header">Pirate Scape</div>
                 <div class="card-body">
                     <h4 class="card-title">Score: <span id="score">0</span></h4>
-                    <p class="card-text">¡Capitán! Ya tenemos a los esclavos que financiaran nuestra flota. Vamos a hacernos paso a través de los barcos mercantes para evitar que nos sigan!</p>
+                    <p class="card-text">¡Capitán se acercan piratas! Debemos huir rápidamente antes de que los piratas secuestren a nuestras mujeres y nuestros hijos y se hagan con el barco.</p>
                 </div>
                 <div class="card-footer">
                     Xavier Licerán
@@ -39,12 +39,19 @@
                         <small class="small_text">(apreta Enter)</small>
                     </button>
                 </div>
-                <div id="next_div" class="bg-primary">
-                    ¡Buen trabajo capitán!</br>
-                    <button id="nextEnigma" class="buttonEnter rounded">
-                        Guardar progreso<br>
-                        <small class="small_text">(apreta Enter)</small>
-                    </button>
+                <div id="next_div">
+                    <div class="card border-info mx-auto mt-5" style="max-width: 20rem;">
+                        <div class="card-body">
+                            <h4 class="card-title">¡Buen trabajo capitán!</span></h4>
+                            <p class="card-text">¿Sabías que los corsarios otomanos capturaron miles de barcos, y amplios tramos del levante de España e Italia fueron casi totalmente abandonadas por sus habitantes ya que por esa época éstos capturaron entre 800.000 y 1.025.000 personas generalmente mujeres ya que los hombres eran decapitados?</p>
+                        </div>
+                        <div class="card-footer">
+                            <form action='/PirateTeaParty/controllers/pathController.php' method='POST'>
+                                <input type ='hidden' name = 'path' value = '2' >
+                                <button type='submit' class='btn btn-success ml-2 mt-2'>Guardar Progreso</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
