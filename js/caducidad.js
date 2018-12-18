@@ -2,8 +2,9 @@
         var timeoutInMiliseconds = 120000;
         var timeoutId; 
 
+    
         function startTimer() { 
-            timeoutId = window.setTimeout(doInactive, timeoutInMiliseconds)
+            timeoutId = window.setTimeout(doInactive, timeoutInMiliseconds);
         }
         
         function doInactive() {
