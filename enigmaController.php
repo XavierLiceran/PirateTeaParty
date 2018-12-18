@@ -8,16 +8,11 @@
 <div id="grupo1">
 
   <div class="row">
-<<<<<<< HEAD
 <?php 
 if($_SESSION['user']['path'] >= 0){
 ?>
-  <div class="col-sm-12 col-md-3 col-lg-3 mt-1 enigma" enigma = "0" style="margin-top:20px;">
+  <div class="col-sm-12 col-md-4 col-lg-4 mt-1 enigma" enigma = "0" style="margin-top:20px; display: none;">
     <div class="card h-100">
-=======
-  <div class="col-sm-12 col-md-3 col-lg-3 mt-1" style="margin-top:20px;">
-  <div class="card h-100" onclick="">
->>>>>>> 272ed6dbe62d25ae78edbd09d02d3d1ad795101e
   <img class="card-img-top" src="/PirateTeaParty/img/enigma1.jpg" alt="actividadespirata" style="height: 270px;">
   <div class="card-body">
     <h5 class="card-title"><strong>Trivia</strong></h5>
@@ -28,19 +23,13 @@ if($_SESSION['user']['path'] >= 0){
 </div>
 </div>
 
-<<<<<<< HEAD
 <?php
 } 
 if($_SESSION['user']['path'] >= 1){
 ?>
-  <div class="col-sm-12 col-md-3 col-lg-3 mt-1 enigma" enigma = "1" style="margin-top:20px;">
+  <div class="col-sm-12 col-md-4 col-lg-4 mt-1 enigma" enigma = "1" style="margin-top:20px;display: none;">
   
   <div class="card h-100">
-=======
-  </div>
-  <div class="col-sm-12 col-md-3 col-lg-3 mt-1" style="margin-top:20px;">
-  <div class="card h-100" onclick="">
->>>>>>> 272ed6dbe62d25ae78edbd09d02d3d1ad795101e
   <img class="card-img-top" src="/PirateTeaParty/img/enigma2.jpg" alt="mosquete" style=" height: 270px;" >
   <div class="card-body">
     <h5 class="card-title"> <strong>Pirate Scape</strong></h5>
@@ -48,17 +37,12 @@ if($_SESSION['user']['path'] >= 1){
   </div>
 </div>
   </div>
-<<<<<<< HEAD
   <?php
 } 
 if($_SESSION['user']['path'] >= 2){
 ?>
-  <div class="col-sm-12 col-md-3 col-lg-3 mt-1 enigma"  enigma = "2" style="margin-top:20px;">
+  <div class="col-sm-12 col-md-4 col-lg-4 mt-1 enigma"  enigma = "2" style="margin-top:20px;display: none;">
   <div class="card h-100">
-=======
-  <div class="col-sm-12 col-md-3 col-lg-3 mt-1" style="margin-top:20px;">
-  <div class="card h-100" onclick="">
->>>>>>> 272ed6dbe62d25ae78edbd09d02d3d1ad795101e
   <img class="card-img-top" src="/PirateTeaParty/img/enigma3.jpg" alt="moriscos" style=" height: 270px;">
   <div class="card-body">
     <h5 class="card-title"> <strong>Batalla de Lepanto</strong></h5>
@@ -67,19 +51,7 @@ if($_SESSION['user']['path'] >= 2){
   </div>
 </div>
 </div>
-<<<<<<< HEAD
 <?php } ?>
-=======
-<div class="col-sm-12 col-md-3 col-lg-3 mt-1" style="margin-top:20px;">
-<div class="card h-100" onclick="">
-  <img class="card-img-top" src="/PirateTeaParty/img/enigma4.jpg" alt="astrolabio" style=" height: 270px;">
-  <div class="card-body">
-    <h5 class="card-title"><strong>Rescate</strong></h5>
-    <p class="card-text"> Rescate a rehenes.</p>
-  </div>
-</div>
-</div>
->>>>>>> 272ed6dbe62d25ae78edbd09d02d3d1ad795101e
 </div>
 </div>
 </div>

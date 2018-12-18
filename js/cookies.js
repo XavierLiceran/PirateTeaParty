@@ -25,8 +25,7 @@ function getCookie(name) {
     }
     // because unescape has been deprecated, replaced with decodeURI
     //return unescape(dc.substring(begin + prefix.length, end));
-    var cook = document.getElementById("obtenercookie");
-    cook.innerHTML = "<p>" + decodeURI(dc.substring(begin + prefix.length, end)) + "</p>";
+    return decodeURI(dc.substring(begin + prefix.length, end));
 } 
 
 function eraseCookie(name) {   

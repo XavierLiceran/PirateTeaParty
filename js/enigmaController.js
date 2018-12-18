@@ -1,8 +1,9 @@
-function mostrarEnigmas(){
+window.onload = function() {
+    console.log("hola");
     enigmas = document.getElementsByClassName("enigma");
 
     Array.prototype.forEach.call(enigmas,function(enigma) {
-        if (piece.getAttribute("enigma") == getCookie("pTPE")){
+        if (enigma.getAttribute("enigma") == getCookie("pTPE")){
             
             enigma.style.display = "block";
         }
@@ -10,6 +11,5 @@ function mostrarEnigmas(){
             enigma.style.display = "none";
         }
 
-    });  
-
-}
+    });
+};
