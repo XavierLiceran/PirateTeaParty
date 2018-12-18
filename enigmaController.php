@@ -29,7 +29,7 @@ if($_SESSION['user']['path'] >= 1){
 ?>
   <div class="col-sm-12 col-md-4 col-lg-4 mt-1 enigma" enigma = "2" style="margin-top:20px;display: none;">
   
-  <div class="card h-100" onclick = "redirigir('enigma1.php')">
+  <div class="card h-100" onclick = "redirigir('enigma2.php')">
   <img class="card-img-top" src="/PirateTeaParty/img/enigma2.jpg" alt="mosquete" style=" height: 270px;" >
   <div class="card-body">
     <h5 class="card-title"> <strong>Pirate Scape</strong></h5>
@@ -42,7 +42,7 @@ if($_SESSION['user']['path'] >= 1){
 if($_SESSION['user']['path'] >= 2){
 ?>
   <div class="col-sm-12 col-md-4 col-lg-4 mt-1 enigma"  enigma = "3" style="margin-top:20px;display: none;">
-  <div class="card h-100" onclick = "redirigir('enigma1.php')">
+  <div class="card h-100" onclick = "redirigir('enigma3.php')">
   <img class="card-img-top" src="/PirateTeaParty/img/enigma3.jpg" alt="moriscos" style=" height: 270px;">
   <div class="card-body">
     <h5 class="card-title"> <strong>Batalla de Lepanto</strong></h5>
