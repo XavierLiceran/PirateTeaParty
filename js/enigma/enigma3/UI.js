@@ -47,6 +47,7 @@ function buttons(next){
         var btn2 = document.createElement("button");
         btn2.classList.add("boton","btn","btn-sm", "col-3");
         btn2.setAttribute("onclick","previousCard()");
+        btn2.setAttribute("type", "button");
         btn2.setAttribute("id","btn2");
         btn2.setAttribute("style","float: left;");
         btn2.innerHTML = "Anterior";
@@ -70,6 +71,7 @@ function buttons(next){
             btn1.classList.add("boton","btn","btn-sm", "col-3");
             btn1.setAttribute("onclick","nextCard()");
             btn1.setAttribute("id","btn1");
+            btn1.setAttribute("type", "button");
             btn1.setAttribute("style","float: right;");
             btn1.innerHTML = "Siguiente";
             botones.appendChild(btn1);
@@ -89,13 +91,14 @@ function startGame(){
     setTimeout(function(){
         victoria = false;    
         endGame();
-    }, 3000);
+    }, 10000);
 
 }
 
 function endGame(){
     var texto = document.getElementById("text");
     var imagen = document.getElementById("imagen");
+    // document.getElementById("path").setAttribute("action","controllers/pathController.php");
     terminado = true;
     if(document.getElementById("btn2")){
         document.getElementById("btn2").style.display ="none";
@@ -115,7 +118,7 @@ function endGame(){
         btn1.innerHTML = "FINALIZAR";
         document.getElementById("botones").appendChild(btn1);
     }
-    imagen.classList.remove('col-6', 'float-left','tamanyo');
+    imagen.parentElement.removeChild(imagen);
     texto.classList.remove('col-6', 'float-right');
     if(victoria){
         texto.innerHTML = "Gracias a tu maestría y liderazgo de tropas has encaminado a la flota hacia la victoria. Eres todo un estratega!!!";

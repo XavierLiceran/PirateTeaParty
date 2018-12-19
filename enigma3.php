@@ -26,12 +26,14 @@
 
                 
             </div>
-            <form id="path" action="controllers/pathController.php" method ="post">
-            <input type="hidden" name="path" value="3">
+
             <div id = "botones" class="card-footer">
-                <button type="button" onclick="nextCard()" style="float: right" class="btn btn-sm col-3 boton" id="btn1">Siguiente</button>
+                <form id="path" action="controllers/pathController.php" method ="post">
+                    <input type="hidden" name="path" value="3">
+                    <button type="button" onclick="nextCard()" style="float: right" class="btn btn-sm col-3 boton" id="btn1">Siguiente</button>
+                </form>
             </div>
-            </form>
+
     </div>
     </div>
     
