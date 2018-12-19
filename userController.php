@@ -22,7 +22,7 @@ try {
 catch(PDOException $e) {
     //$result = ["error" => $e];
     $_SESSION['feedback']['error'] = errorMessage($e);
-    $result = "";
+    $result = -1;
 }
 
 $conn = closeBD();

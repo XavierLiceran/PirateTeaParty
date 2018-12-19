@@ -6,18 +6,18 @@
     }
 
     function drag(ev) {
-
-        if(empezado){
-            ev.dataTransfer.setData("text", ev.target.id);
-        }
-        else{
-            alert(msg[msgCounter]);
-            msgCounter++;
-            if(msgCounter === 3){
-                startGame();
+        if(!terminado){
+            if(empezado){
+                ev.dataTransfer.setData("text", ev.target.id);
             }
-        }
-        
+            else{
+                alert(msg[msgCounter]);
+                msgCounter++;
+                if(msgCounter === 3){
+                    startGame();
+                }
+            }
+        }        
     }
 
     function drop(ev) {
@@ -30,7 +30,10 @@
             init();
             resultat();
             if (!amenazado && victoria()){
+
                 pintarVictoria();
+                victoria = true;
+                endGame();
             }
             else{
                 piece = document.getElementById(ev.dataTransfer.getData("text"));

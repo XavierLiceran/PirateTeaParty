@@ -13,10 +13,10 @@
             <div id="card1" class="card-body">
                 
                 <h4 class="card-title">Batalla de Lepanto</h4>
-                <div id = "instrucciones" class = "row">
+                <div id = "instrucciones" class = "container row">
                     <img id = "imagen"  class = ""   src="" alt="">
                     <p id ="text" class="">
-                    Nos informan que una gran flota infiel se acerca a nuestas costas, se hacen llamar corsarios y estan al servicio del Imperio Otomano, pero no son mas que piratas que saquean nuestras rutas comerciales. 
+                    Nos informan que una gran flota infiel se acerca a nuestras costas, se hacen llamar corsarios y están al servicio del Imperio Otomano, pero no son más que piratas que saquean nuestras rutas comerciales.
                     <br/>
                     Hemos reunido toda la flota cristiana y hoy, en el glorioso santo de la Virgen del Rosario, saldremos victoriosos en nuestra santa empresa.
                     </p>

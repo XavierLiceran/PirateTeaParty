@@ -31,7 +31,7 @@ if (isset($_POST['email'])){
         }
     }
     
-    if (isset($_SESSION['feedback']['succes'])) {
+    if (!isset($_SESSION['feedback']['error'])) {
         header("location: enigmaController.php");
     }  
     else{   

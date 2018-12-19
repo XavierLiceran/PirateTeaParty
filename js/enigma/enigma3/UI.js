@@ -39,7 +39,7 @@ function previousCard(){
 }
 
 function buttons(next){
-    var botones = document.getElementById("botones");
+    var botones = document.getElementById("path");
     if(cardNumber === 0 && document.getElementById("btn2")){        
         botones.removeChild(document.getElementById("btn2"));
     }
@@ -87,46 +87,53 @@ function buttons(next){
 }
 function startGame(){
     empezado = true;
-
+    if(document.getElementById("btn1").innerHTML == "EMPEZAR!"){
+        document.getElementById("btn1").parentElement.removeChild(document.getElementById("btn1"));
+    }
+    
     setTimeout(function(){
         victoria = false;    
         endGame();
-    }, 10000);
+    }, 3000);
+
 
 }
 
 function endGame(){
-    var texto = document.getElementById("text");
-    var imagen = document.getElementById("imagen");
-    // document.getElementById("path").setAttribute("action","controllers/pathController.php");
-    terminado = true;
-    if(document.getElementById("btn2")){
-        document.getElementById("btn2").style.display ="none";
+    if(!terminado){
+        var texto = document.getElementById("text");
+        var imagen = document.getElementById("imagen");
+        // document.getElementById("path").setAttribute("action","controllers/pathController.php");
+        terminado = true;
+        if(document.getElementById("btn2")){
+            document.getElementById("btn2").style.display ="none";
+        }
+        if(document.getElementById("btn1")){
+            btn1 = document.getElementById("btn1");
+            btn1.setAttribute("type", "submit");
+            btn1.removeAttribute("onclick");
+            btn1.innerHTML = "FINALIZAR";
+        }
+        else{
+            var btn1 = document.createElement("button");
+            btn1.classList.add("boton","btn","btn-sm", "col-3");
+            btn1.setAttribute("id","btn1");
+            btn1.setAttribute("type", "submit");
+            btn1.setAttribute("style","float: right;");
+            btn1.innerHTML = "FINALIZAR";
+            document.getElementById("path").appendChild(btn1);
+        }
+        imagen.parentElement.removeChild(imagen);
+        texto.classList.remove('col-6', 'float-right');
+        if(victoria){
+            texto.innerHTML = "Gracias a tu maestría y liderazgo de tropas has encaminado a la flota hacia la victoria. Eres todo un estratega!!!";
+            alert("Felicidades, has completado el enigma con éxito!! pulsa FINALIZAR para terminar");
+        
+        }
+        else{
+            texto.innerHTML = "La batalla es inminente y tus superiores no pueden esperar más, has demostrado no estar a la altura del un puesto para el que, con toda seguridad, no estabas preparado."
+            alert("Se te ha acabado el tiempo, pulsa FINALIZAR para terminar");
+        }
     }
-    if(document.getElementById("btn1")){
-        btn1 = document.getElementById("btn1");
-        btn1.setAttribute("type", "submit");
-        btn1.removeAttribute("onclick");
-        btn1.innerHTML = "FINALIZAR";
-    }
-    else{
-        var btn1 = document.createElement("button");
-        btn1.classList.add("boton","btn","btn-sm", "col-3");
-        btn1.setAttribute("id","btn1");
-        btn1.setAttribute("type", "submit");
-        btn1.setAttribute("style","float: right;");
-        btn1.innerHTML = "FINALIZAR";
-        document.getElementById("botones").appendChild(btn1);
-    }
-    imagen.parentElement.removeChild(imagen);
-    texto.classList.remove('col-6', 'float-right');
-    if(victoria){
-        texto.innerHTML = "Gracias a tu maestría y liderazgo de tropas has encaminado a la flota hacia la victoria. Eres todo un estratega!!!";
-        alert("Felicidades, has completado el enigma con éxito!! pulsa FINALIZAR para terminar");
     
-    }
-    else{
-        texto.innerHTML = "La batalla es inminente y tus suporiores no pueden esperar mas, Has demostrado no estar a la altura del un puesto para el que, con toda seguridad, no estabas preparado."
-        alert("Se te ha acabado el tiempo, pulsa FINALIZAR para terminar");
-    }
 }
