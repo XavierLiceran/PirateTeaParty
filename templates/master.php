@@ -40,7 +40,22 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
     <script src="./js/caducidad.js"></script>
 </head>
+
+<?php
+    if(isset($_SESSION['user'])){
+?>
+
 <body onload="initTimer()">
+
+<?php
+    } else {
+?>
+
+<body>
+
+<?php
+    }
+?>
     
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark gradient">
