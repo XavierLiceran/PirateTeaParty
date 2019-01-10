@@ -13,6 +13,8 @@
                 <div class="card-body">
                     <h4 class="card-title">Score: <span id="score">0</span></h4>
                     <p class="card-text">¡Capitán se acercan piratas! Debemos huir rápidamente antes de que los piratas secuestren a nuestras mujeres y nuestros hijos y se hagan con el barco.</p>
+                    <p class="card-text">Utiliza las flechas del teclado para moverte!</p>
+                    <div id="arrowDiv"></div>
                 </div>
                 <div class="card-footer">
                     Xavier Licerán

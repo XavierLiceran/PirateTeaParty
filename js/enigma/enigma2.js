@@ -134,7 +134,7 @@ function spawnEnemy(enemy){
     enemy.css('top', current_top + speed);
 }
 
-function endGame($callback){
+function endGame(callback){
     game_over = true;
     cancelAnimationFrame(anim_id);
     cancelAnimationFrame(moveL);
@@ -142,7 +142,7 @@ function endGame($callback){
     cancelAnimationFrame(moveU);
     cancelAnimationFrame(moveD);
 
-    $callback();
+    callback();
 }
 
 rbutton.click(function(){

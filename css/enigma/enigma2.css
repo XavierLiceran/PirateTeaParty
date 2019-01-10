@@ -102,3 +102,11 @@
     padding: 10px;
     box-shadow: 4px 4px 0px 1px #292929;
 }
+
+#arrowDiv{
+    width: 150px;
+    height: 150px;
+    background-image: url(../../img/enigma/enigma2/arrows.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
