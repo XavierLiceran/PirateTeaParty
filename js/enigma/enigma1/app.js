@@ -55,7 +55,6 @@ function mostrarResultados() {
      findeljuego += "<input type ='hidden' name = 'path' value = '1' >";
      findeljuego += "<button type='submit' class='btn btn-success ml-2 mt-2'>Finalizar</button>";
      findeljuego += "</form>";
-     
      var element = document.getElementById("game");
      element.innerHTML = findeljuego;
     }
@@ -81,16 +80,20 @@ function mostrarResultados() {
         findeljuego+= "<span aria-hidden='true'>&times;</span>";
        findeljuego+= "</button></div>";
        findeljuego += "<button type='button' onclick='recargarPagina()' class='btn btn-success ml-2 mt-2'>Volver a intentarlo!</button>";
+       findeljuego += "<button type='button' class='btn btn-success ml-2 mt-2' onclick='mostrarFallos()' style='weight:bold;font-size:15px;'>Mostrar fallos </button>"
+       findeljuego += "<div id='fallo'> </div>";
        findeljuego += "<form action='/PirateTeaParty/controllers/pathController.php' method='POST'>";
        findeljuego += "<input type ='hidden' name = 'path' value = '1' >";
        findeljuego += "<button type='submit' onclick='' class='btn btn-success ml-2 mt-2'>Finalizar</button>";
        findeljuego += "</form>";
        var element = document.getElementById("game");
-       element.innerHTML = findeljuego;
-             
+       element.innerHTML = findeljuego;        
     }
 };
-
+function mostrarFallos ()
+{
+    document.getElementById("fallo").innerHTML = fallos;
+}
 // crear preguntas en array
 var preguntas = [
     new Pregunta("Cual era la principal actividad lucrativa en los piratas del mediterráneo?", ["Oro", "Plata","Esclavos", "Metal"], "Esclavos"),
@@ -135,5 +138,6 @@ function recargarPagina()
 {
     location.reload(false);
 }
+
 
 

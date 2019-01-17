@@ -1,3 +1,6 @@
+var fallos = new Array(7);
+
+ 
 function Juego(questions) {
     this.puntuacion = 0;
     this.questions = questions;
@@ -9,8 +12,13 @@ Juego.prototype.getQuestionIndex = function() {
 	}
 
 Juego.prototype.guess = function(answer) {
+			auxind = this.questionIndex + 1;
     if(this.getQuestionIndex().isCorrectAnswer(answer)) {
         this.puntuacion++;
+        fallos[this.questionIndex] = "Pregunta Nº" +auxind+" Correcta! "; 
+    }
+    else {
+        fallos[this.questionIndex] = "Pregunta Nº"+auxind+" Incorrecta! ";
     }
     this.questionIndex++;
 	clearInterval(miInterval);
