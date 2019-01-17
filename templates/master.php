@@ -3,7 +3,7 @@
     require_once $_SERVER['DOCUMENT_ROOT'] . '/PirateTeaParty/librerias/ti.php'; 
     require_once $_SERVER['DOCUMENT_ROOT'] . '/PirateTeaParty/mensajes.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/PirateTeaParty/switchController.php';
-    
+
     if (!isset($_SESSION['from'])){
         $_SESSION['from'] = "";    
     }
