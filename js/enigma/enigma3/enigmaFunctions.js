@@ -50,7 +50,6 @@
         pintarAmenazados();
     }
 
-
     function victoria(){
         var victoria = false;
         var objectPieces = document.getElementsByClassName("piece");
@@ -68,14 +67,11 @@
 
     }
 
-
     function init(){
         amenazado = false;
         readyPieces();
         readySquares();
     }
-
-
 
     function resultat(){
         var objectPieces = document.getElementsByClassName("piece");
@@ -83,11 +79,8 @@
 
             if(!getAmenaza(piece)){
                 queensPath(piece, pieceAmenaza);
-            }        
-
+            }      
         });    
-
-
     }
 
     function showMeTheWay(){
@@ -96,16 +89,10 @@
             //solo se ejecutara para las piezas amenazadas
             if(getAmenaza(piece)){
                 queensPath(piece, squareAmenaza);
-            } 
-            
+            }            
             
         }); 
-
     }
-
-
-
-
     function queensPath(piece, callback){
 
         var self = piece.getAttribute("position");
@@ -123,7 +110,7 @@
             x++;
         }
 
-        pieceFound = false
+        pieceFound = false;
         x = position[0];
         while (!pieceFound  && x>0){
             target = "" + x + y;
@@ -131,7 +118,7 @@
             x--;
         }
 
-        pieceFound = false
+        pieceFound = false;
         x = position[0];
         y = position[1];
         while (!pieceFound  && y<9){
@@ -140,14 +127,14 @@
             y++;
         }
 
-        pieceFound = false
+        pieceFound = false;
         y = position[1];
         while (!pieceFound  && y>0 ){
             target = "" + x + y;
             pieceFound = callback(piece, self, target);
             y--;
         }
-        pieceFound = false
+        pieceFound = false;
         x = position[0];
         y = position[1];
         while (!pieceFound  && x<9 && y<9){
@@ -156,7 +143,7 @@
             x++;
             y++;
         }
-        pieceFound = false
+        pieceFound = false;
         x = position[0];
         y = position[1];
         while (!pieceFound  && x>0 && y>0){
@@ -166,7 +153,6 @@
             y--;
         }
 
-        pieceFound = false
         pieceFound = false;
         x = position[0];
         y = position[1];
@@ -177,8 +163,6 @@
             x++;
             y--;
         }
-
-        pieceFound = false
         pieceFound = false;
         x = position[0];
         y = position[1];
@@ -279,11 +263,6 @@
             setAmenaza(piece.parentElement);
         });
 
-        // var targetElement = document.getElementById(target);
-        //  if (!getAmenaza(targetElement)){
-        //      setAmenaza(targetElement);
-        //  }
-        //  return false;
      }
 
      function pintarVictoria(){

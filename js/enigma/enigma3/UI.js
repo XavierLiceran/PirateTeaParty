@@ -94,7 +94,7 @@ function startGame(){
     setTimeout(function(){
         victoria = false;    
         endGame();
-    }, 3000);
+    }, 300000);
 
 
 }
